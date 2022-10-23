@@ -1,0 +1,133 @@
+.App {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+body::-webkit-scrollbar {
+  width: 0.5em;
+}
+ 
+body::-webkit-scrollbar-track {
+  box-shadow: inset 2px 2px 0px rgba(0, 0, 0, 0.3);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: rgb(109, 157, 255);
+  border-radius : 5px;
+}
+
+
+/*----Main----------------------------------------------------------------------*/
+
+
+.main {
+  max-width: 90vw;
+  margin: auto;
+  margin: 5vw;
+  display: flex;
+  margin-right: 5vw;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 5vw;
+}
+
+.main-text-iam {
+  font-family: "Cookie";
+  font-size: 40px;
+  color: rgb(18, 8, 69);
+  margin-right: 18vw;
+}
+
+.main-text-name {
+  font-family: "neue_haas_grotesk_display75Bd";
+  padding : 10px;
+  font-size: 40px;
+  color: rgb(18, 8, 69);
+  margin: 1vw 1vw;
+  background: linear-gradient(0deg, rgb(18, 8, 69), rgb(18, 8, 69)) no-repeat
+    right bottom / 0 var(--bg-h);
+  transition: background-size 450ms, color 450ms;
+  --bg-h: 100%;
+}
+
+.main-text-name:hover {
+  font-family: "neue_haas_grotesk_display75Bd";
+  font-size: 40px;
+  color: white;
+  margin: 1vw 1vw;
+  background-size: 100% var(--bg-h);
+  background-position-x: left;
+}
+
+.main-text-desc {
+  font-family: "neue_haas_grotesk_display65Md";
+  text-align: center;
+  font-size: 30px;
+  color: rgb(18, 8, 69);
+  margin: 1vw 3vw;
+}
+
+.resume {
+  width: 150px;
+  height: 40px;
+  border: 0px;
+  margin-top: 4vw;
+  border-radius: 20px;
+  box-shadow: 1px 1px 6px black, -2px -2px 5px rgb(109, 157, 255);
+  font-family: "neue_haas_grotesk_display65Md";
+  font-size: 20px;
+  color: rgb(18, 8, 69);
+  text-shadow: 2px 2px 0px white, -2px -2px 0px white;
+  background-image: repeating-linear-gradient(
+    -45deg,
+    rgba(0, 0, 0, 0.25),
+    rgba(0, 0, 0, 0.25) 1px,
+    transparent 1px,
+    transparent 6px
+  );
+  background-size: 4px 4px;
+  transition: all 0.25s;
+}
+.resume:hover {
+  background-color: rgb(18, 8, 69);
+  color: white;
+  box-shadow: none;
+  text-shadow: none;
+  cursor : pointer;
+}
+
+.profile {
+  width: 25vw;
+  height: 65vh;
+  box-shadow: 3px 3px 0px rgb(109, 157, 255), -3px -3px 0px hsl(220deg 100% 55%);
+  position: relative;
+  object-fit: cover;
+  object-position: 40% 20%;
+}
+.profile-back {
+  width: 25vw;
+  height: 65vh;
+  position: absolute;
+  margin-top: 40px;
+  margin-left: 40px;
+  background-image: repeating-linear-gradient(
+    -45deg,
+    rgba(0, 0, 0, 1),
+    rgba(0, 0, 0, 1) 1px,
+    transparent 2px,
+    transparent 10px
+  );
+  background-size: 8px 8px;
+  border: 2px black solid;
+}
+
+/*---------------------------------------------------------------------------------------*/
+

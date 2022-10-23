@@ -1,0 +1,117 @@
+/*----Education----------------------------------------------------------------------*/
+.education {
+  display : flex;
+  flex-direction: column;
+
+}
+
+.education-section-title {
+  margin-right: auto;
+  margin-left: 3vw;
+  color: black;
+  text-shadow: 4px 0px 0px white, -4px 0px 0px white, 0px 4px 0px white,
+    0px -4px 0px white;
+  font-family: "Poppins";
+  font-size: 30px;
+  font-weight: 700px;
+  transition : all 0.20s linear;
+  padding : 4px 20px;
+  margin-bottom : 20px;
+  margin-top: 40px;
+}
+
+.education-section-title:hover {
+  color :rgb(109, 157, 255);
+  box-shadow: 4px 0px 0px hsl(220deg 100% 55%),
+  -4px 0px 0px  hsl(220deg 100% 55%);
+  cursor : default;
+}
+
+.education-section {
+    background-color: white;
+    min-height : 500px;
+    background-image: repeating-linear-gradient(
+      -45deg,
+      rgba(0, 0, 0, 1),
+      rgba(0, 0, 0, 1) 1px,
+      transparent 1px,
+      transparent 6px
+    );
+    background-size: 8px 8px;
+    height: 35vw;
+    display: flex;
+    padding: 5vw;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px -2px 0px black, 0px 2px 0px black;
+  }
+  
+  .college,
+  .school-10,
+  .school-12{
+    width: 22vw;
+    height: 30vw;
+    min-width: 250px;
+    min-height : 430px;
+    color: white;
+    background : linear-gradient(to bottom, rgb(94, 105, 126) 10% ,rgb(30, 62, 126));
+    border-radius : 5px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap : wrap;
+    overflow-y :hidden;
+    overflow-x :hidden;
+    justify-content: flex-start;
+    align-items: center;
+    transition: all 2s ease-in-out; 
+  
+  }
+  
+  .name {
+    font-family : 'Poppins';
+    font-size : 26px;
+    text-align: center;
+    margin-top : 2vw;
+    margin-bottom: 2vw;
+  }
+  
+  .location,.degree,.duration,.cgpa {
+    font-family : 'Poppins';
+    font-weight: 100;
+    font-size : 18px;
+    text-align: center;
+    margin-top : 1vw;
+  
+  }
+  
+  .college:hover {
+    background-image: url("../assets/image/bitmesra.png");
+    background-repeat : no-repeat;
+    z-index : 2;
+    background-size: cover;
+    background-position: 50% 0%;
+    cursor : pointer;
+  }
+  
+  .school-10:hover, .school-12:hover {
+    background-image: url("../assets/image/dav.png");
+    background-repeat : no-repeat;
+    background-size: cover;
+    background-position: 50% 0%;
+    cursor : pointer;
+  }
+  .college:hover .fade{
+    display : none;
+  
+  }
+  .school-12:hover .fade{
+    display : none;
+  }
+  .school-10:hover .fade{
+    display : none;
+  }
+  
+  .invisibleLink {
+    all : unset;
+  }
+  

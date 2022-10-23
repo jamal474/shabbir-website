@@ -1,0 +1,165 @@
+.project {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  /* margin : 5vh 5vw; */
+}
+
+.project-section-title {
+  margin-right: auto;
+  margin-left: 3vw;
+  color: black;
+  text-shadow: 4px 0px 0px white, -4px 0px 0px white, 0px 4px 0px white,
+    0px -4px 0px white;
+  font-family: "Poppins";
+  font-size: 30px;
+  font-weight: 700px;
+  transition : all 0.20s linear;
+  padding : 4px 20px;
+}
+
+.project-section-title:hover {
+    color :rgb(109, 157, 255);
+    box-shadow: 4px 0px 0px hsl(220deg 100% 55%),
+    -4px 0px 0px  hsl(220deg 100% 55%);
+    cursor : default;
+}
+.project-style-1 {
+  margin: 8vh 0vw;
+  width: 90vw;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+
+.project-style-2 {
+  margin: 8vh 0vw;
+  width: 85vw;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.description {
+  background: white;
+  width: 40vw;
+  height: 50vh;
+  margin-left: auto;
+  padding: 2px 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.project-image-1 {
+  margin-right: auto;
+}
+
+.project-image-2 {
+  margin-left: auto;
+}
+
+.project-profile {
+  width: 35vw;
+  height: 40vh;
+  filter: grayscale(100%);
+  margin-left: 40px;
+  box-shadow: 3px 3px 0px rgb(109, 157, 255),
+   -3px -3px 0px hsl(220deg 100% 55%);
+  position: relative;
+  object-fit: cover;
+  object-position: 40% 20%;
+  transition: all 0.5s;
+}
+
+.project-profile:hover {
+  filter: grayscale(0%);
+}
+
+.project-profile-back {
+  width: 36vw;
+  height: 40vh;
+  position: absolute;
+  padding: 0vw 2vw;
+  margin-top: 40px;
+  background-image: repeating-linear-gradient(
+    -45deg,
+    rgba(0, 0, 0, 1),
+    rgba(0, 0, 0, 1) 1px,
+    transparent 2px,
+    transparent 10px
+  );
+  background-size: 8px 8px;
+  border: 2px black solid;
+  transition: all 2s ease-in-out;
+}
+
+.project-profile-back:hover {
+  background-image: repeating-linear-gradient(
+    -45deg,
+    rgba(0, 0, 0, 1),
+    rgba(0, 0, 0, 1) 1px,
+    transparent 1px,
+    transparent 6px
+  );
+  background-size: 8px 8px;
+}
+
+.proj-link > img {
+  width: 30px;
+  margin: 10px 10px;
+}
+
+.proj-link > img:hover {
+  border-radius: 20px;
+  border: 2px rgb(109, 157, 255) solid;
+  margin: 10px 8px;
+}
+
+.desc-name {
+  font-family: "Poppins";
+  font-size: 30px;
+  color: rgb(18, 8, 69);
+  margin-right: 20px;
+}
+
+.skill-comp {
+  color: white;
+  background-color: rgb(18, 8, 69);
+  padding: 5px 10px;
+  text-align: center;
+  border-radius: 20px;
+  font-size: 20px;
+  font-weight: 100;
+  font-family: "Poppins";
+}
+
+.skills-comp-used {
+  font-family: "Poppins";
+  font-size: 20px;
+  font-weight: 100;
+  color: rgb(18, 8, 69);
+  margin: 4px 0px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.proj-desc {
+  font-family: "Poppins";
+  font-size: 20px;
+  font-weight : 100;
+  color: rgb(18, 8, 69);
+  margin: 4px 0px;
+}
+
+.overview {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 0vw;
+}

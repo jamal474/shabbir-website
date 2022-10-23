@@ -1,0 +1,86 @@
+.skills {
+    display : flex;
+    flex-direction: column;
+}
+
+.skills-section-title {
+    margin-right: auto;
+  margin-left: 3vw;
+  color: black;
+  text-shadow: 4px 0px 0px white, -4px 0px 0px white, 0px 4px 0px white,
+    0px -4px 0px white;
+  font-family: "Poppins";
+  font-size: 30px;
+  font-weight: 700px;
+  transition : all 0.20s linear;
+  padding : 4px 20px;
+}
+
+.skills-section-title:hover {
+    color :rgb(109, 157, 255);
+    box-shadow: 4px 0px 0px hsl(220deg 100% 55%),
+    -4px 0px 0px  hsl(220deg 100% 55%);
+    cursor : default;
+}
+
+.skills-section {
+    background-color: white;
+    background-image: repeating-linear-gradient(
+      45deg,
+      rgba(0, 0, 0, 1),
+      rgba(0, 0, 0, 1) 1px,
+      transparent 1px,
+      transparent 6px
+    );
+    background-size: 8px 8px;
+    height: 40vh;
+    display: flex;
+    padding: 5vw;
+    justify-content: space-between;
+    flex-wrap : wrap;
+    align-items: center;
+    box-shadow: 0px -2px 0px black, 0px 2px 0px black;
+}
+
+.skills-learned {
+    background-color: white;
+    display : flex;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius : 20px;
+    padding:5px 10px;
+    box-shadow: inset 1px 1px 2px black,inset -2px -2px 2px rgb(192, 192, 192);
+    transition : all 0.25s linear;
+}
+.skills-learned:hover {
+    box-shadow: 1px 1px 2px black, -2px -2px 2px rgb(192, 192, 192);
+    cursor : pointer;
+}
+
+.skills-learned:hover .skills-learned-logo{
+    width : 54px;
+    margin : 0px 5px;
+}
+
+.skills-learned:hover .skills-learned-comp{
+    font-family: "Poppins";
+    font-size : 28px;
+    font-weight: 900;
+    padding : 0px 5px;
+    color: black;
+    
+}
+.skills-learned-logo {
+    width : 50px;
+    margin : 0px 5px;
+    transition : all 0.25s linear;
+}
+
+.skills-learned-comp {
+    font-family: "Poppins";
+    font-size : 25px;
+    font-weight: 900;
+    padding : 0px 5px;
+    color: black;
+    transition : all 0.25s linear;
+}

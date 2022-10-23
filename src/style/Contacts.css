@@ -1,0 +1,183 @@
+.contacts {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contacts-section-title {
+  margin-right: auto;
+  margin-left: 3vw;
+  color: black;
+  text-shadow: 4px 0px 0px white, -4px 0px 0px white, 0px 4px 0px white,
+    0px -4px 0px white;
+  font-family: "Poppins";
+  font-size: 30px;
+  font-weight: 700px;
+  transition: all 0.2s linear;
+  padding: 4px 20px;
+}
+
+.contacts-section-title:hover {
+  color: rgb(109, 157, 255);
+  box-shadow: 4px 0px 0px hsl(220deg 100% 55%),
+    -4px 0px 0px hsl(220deg 100% 55%);
+  cursor: default;
+}
+
+.contacts-section {
+    width : 100vw;
+    margin-bottom : 50px;
+}
+
+.front-card {
+  background: white;
+  padding: 0px 20px;
+  width: 26vw;
+  height: 55vh;
+  position: absolute;
+  display : flex;
+  border : 1px rgb(18, 8, 69) solid;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin-top: 130px;
+  margin-left: 17vw;
+  box-shadow: 2px 0px 10px black;
+  z-index : 2;
+}
+
+a {
+    all : unset;
+}
+
+.back-card {
+    background-image: repeating-linear-gradient(
+        11deg,
+        rgba(0, 0, 0, 0.25),
+        rgb(7, 105, 253, 1) 1px,
+        transparent 2px,
+        transparent 5px
+      );
+  width: 50vw;
+  height: 85vh;
+  position: relative;
+  border : 2px grey solid;
+  margin-left: auto;
+  margin-right: 10vw;
+  margin-top: 50px;
+  z-index: 0;
+}
+
+.contact-logos {
+    width : 25px;
+    margin : 10px;
+}
+
+.email, .location {
+    display : flex;
+    justify-content: flex-start;
+    align-items: center;
+    box-shadow: 0px 1px 0px grey;
+}
+
+.email:hover {
+    cursor : pointer;
+}
+
+.location:hover {
+    cursor : pointer;
+}
+
+.contact-val {
+    font-family: "Poppins";
+    font-weight: 500;
+    font-size : 20px;
+    color : rgb(104, 103, 103);
+    padding-left : 10px;
+}
+
+.message-card{
+    padding-left : 10vw;
+    padding-top : 13vh;
+}
+
+.form-card {
+    display : flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 30vw;
+    height: 85vh;
+
+}
+
+.form-card > input {
+    height : 25px;
+    padding : 5px 20px;
+    border : 1px grey solid;
+    border-radius : 10px;
+    margin-bottom : 20px;
+    font-family : "Poppins";
+    font-size : 16px;
+    font-weight: 500;
+
+}
+
+.form-card > textarea{
+    margin-bottom : 15px;
+    border : 1px grey solid;
+    border-radius : 20px;
+    padding : 10px 20px;
+    font-family : "Poppins";
+    font-size : 16px;
+    font-weight: 500;
+}
+
+.form-card > button {
+    height : 40px;
+    width : 120px;
+    border : 0px;
+    border-radius: 50px;
+    font-family : "Poppins";
+    font-size : 19px;
+    font-weight: 500;
+    color : white;
+    background-color: rgb(18, 8, 69);
+
+}
+
+.contact-val:hover {
+    color : black;
+}
+
+.instagram {
+    width : 40px;
+    margin : 0px 20px;
+    border : 2px transparent solid;
+    border-radius: 14px;
+}
+
+.socials-logo {
+    width : 40px;
+    margin : 0px 20px;
+    border : 2px transparent solid;
+    border-radius: 40px;
+}
+
+.instagram:hover {
+    border: 2px rgb(7, 105, 253, 1) solid;
+}
+.socials-logo:hover {
+    border: 2px rgb(7, 105, 253, 1) solid;
+}
+
+.socials:hover {
+    cursor : pointer;
+}
+
+.rights {
+    width : 100%;
+    text-align: center;
+    background-color: rgb(18, 8, 69);
+    font-family: "Poppins";
+    color : white;
+}
