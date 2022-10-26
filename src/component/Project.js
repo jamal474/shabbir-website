@@ -8,7 +8,7 @@ import website_icon from '../assets/icon/Website.svg'
 function Project()
 {
     return(
-        <div className = "project" id = "Project">
+        <div className = "project syncscroll" name="myElements" id = "Project">
             <h2 className = "project-section-title">Projects</h2>
             <div className="project-style-1">
                 <div className = "project-image-1">

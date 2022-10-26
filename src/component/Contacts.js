@@ -6,6 +6,8 @@ import locationimg from '../assets/icon/location.svg'
 import githubimg_c from '../assets/icon/Github.svg'
 import linkedinimg_c from '../assets/icon/linkedin.svg'
 import instagramimg_c from '../assets/icon/instagram.svg'
+import twitterimg_c from '../assets/icon/twitter2.svg'
+import codeforcesimg_c from '../assets/icon/codeforces.svg'
 
 
 export default function Contacts() {
@@ -25,12 +27,14 @@ export default function Contacts() {
       };
     
   return (
-    <div className = "contacts" id = "Contacts">
+    <div className = "contacts syncscroll" name="myElements" id = "Contacts">
         <h2 className = "contacts-section-title">Contacts</h2>
         <div className = "socials">
             <a target = "_blank" rel="noreferrer" href = "https://www.linkedin.com/in/md-shabbir-jamal-0620781a0"><img src = {linkedinimg_c} className = "socials-logo" alt = "linkedin logo"/></a>
             <a target = "_blank" rel="noreferrer" href = "https://github.com/jamal474"><img src = {githubimg_c} className = "socials-logo" alt = "github logo"/></a>
             <a target = "_blank" rel="noreferrer" href = "https://www.instagram.com/lamaj.sm/"><img src = {instagramimg_c} className = "instagram" alt = "instagram logo"/></a>
+            <a target = "_blank" rel="noreferrer" href = "https://twitter.com/lamajribbahs"><img src = {twitterimg_c} className = "socials-logo" alt = "twitter logo"/></a>
+            <a target = "_blank" rel="noreferrer" href = "https://codeforces.com/profile/jamal474"><img src = {codeforcesimg_c} className = "codeforces-logo" alt = "codeforces logo"/></a>
         </div>
         <div className = "contacts-section">
             <div className = "front-card">

@@ -149,7 +149,7 @@ a {
     color : black;
 }
 
-.instagram {
+.instagram, .codeforces-logo{
     width : 40px;
     margin : 0px 20px;
     border : 2px transparent solid;
@@ -162,8 +162,7 @@ a {
     border : 2px transparent solid;
     border-radius: 40px;
 }
-
-.instagram:hover {
+.instagram:hover, .codeforces-logo:hover {
     border: 2px rgb(7, 105, 253, 1) solid;
 }
 .socials-logo:hover {

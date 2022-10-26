@@ -3,7 +3,7 @@ import profileImage from '../assets/image/profile.jpeg'
 function Main()
 {
     return (
-        <div className = "main" id = "About">
+        <div className = "main syncscroll" name="myElements" id = "About">
             <div className = "main-text">
                 <div className = "main-text-iam">Hello I'm</div>
                 <div className = "main-text-name">Md Shabbir Jamal</div>

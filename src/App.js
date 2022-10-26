@@ -9,7 +9,7 @@ import Contacts from "./component/Contacts";
 
 function App() {
   return (
-    <div className="App" onScroll={onscroll}>
+    <div className="App" id = "App" onScroll={onscroll}>
       <Header />
       <div id="Other">
         <Main />

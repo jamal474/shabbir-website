@@ -1,7 +1,6 @@
 .App {
   scroll-behavior: smooth;
-  overflow-x: hidden;
-  overflow-y: hidden;
+  overscroll-behavior: contain;
 }
 
 body::-webkit-scrollbar {

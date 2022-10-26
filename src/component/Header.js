@@ -1,4 +1,5 @@
 import React from 'react'
+import {Link} from 'react-scroll'
 import '../style/Header.css'
 function Header() {
 
@@ -14,13 +15,13 @@ function Header() {
 
   return (
     <div className={color ? 'header header-bg' : 'header'}>
-      <div className="option">
-        <h2 id="logo">MDSJ</h2>
-        <a href = "#About"><h4 id="option-About">About</h4></a>
-        <a href = "#Education"><h4 id="option-Education">Education</h4></a>
-        <a href = "#Project"><h4 id="option-Project">Projects</h4></a>
-        <a href = "#Skills"><h4 id="option-Skills">Skills</h4></a>
-        <a href = "#Contacts"><h4 id="option-Contacts">Contacts</h4></a>
+      <div className="option syncscroll" name="myElements">
+        <Link to="App" spy={true} smooth={true} offset={-60} duration={500} className = "logo" >MDSJ</Link>
+        <Link to="About" spy={true} smooth={true} offset={-60} duration={500} className = "nav-option">About</Link>
+        <Link to="Education" spy={true} smooth={true} offset={-60} duration={500} className = "nav-option">Education</Link>
+        <Link to="Project" spy={true} smooth={true} offset={-60} duration={500} className = "nav-option">Projects</Link>
+        <Link to="Skills" spy={true} smooth={true} offset={-60} duration={500} className = "nav-option">Skills</Link>
+        <Link to="Contacts" spy={true} smooth={true} offset={-60} duration={500} className = "nav-option">Contacts</Link>
       </div>
     </div>
   );

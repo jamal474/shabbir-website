@@ -17,21 +17,25 @@
     );
     height: 60px;
     border: 5px;
+    position: -webkit-sticky;
+    position: sticky;
+    top : 0;
     border-radius: 10px;
     transition : all 1s linear;
   }
 
   .header-bg {
     background: black;
-    position : fixed;
-    width : 100vw;
-    margin : 0px;
+    width : 98vw;
+    border-radius: 0px;
+    margin : auto;
+    border-radius : 10px;
+    border : 0px;
   }
-a {
-  all : unset;
-}
 
   .option {
+    overflow-x: hidden;
+    overflow-y : hidden;
     background: linear-gradient(to right, transparent 5%, black 80%);
     height: 60px;
     border: 5px;
@@ -44,7 +48,7 @@ a {
     /* box-shadow : 5px 5px 0px red; */
   }
   
-  .option > a > h4 {
+ .nav-option{
     margin: 5px 10px;
     color: white;
     padding: 10px 20px;
@@ -55,7 +59,7 @@ a {
     transition: all 0.4s;
   }
   
-  .option > a > h4:hover {
+  .nav-option:hover {
     margin: 5px 10px;
     color: black;
     background: white;
@@ -66,15 +70,26 @@ a {
     cursor: pointer;
   }
   
-  #logo {
+  .logo {
     color: black;
-  
     text-shadow: 2px 0px 0px white, -2px 0px 0px white, 0px 2px 0px white,
       0px -2px 0px white;
     margin-left: 20px;
-    font-family: sans-serif;
+    font-family: "Poppins";
     font-size: 40px;
-    font-weight: 700px;
+    font-weight: 900;
     margin-right: auto;
   }
+
+  .logo:hover {
+    cursor : pointer;
+  }
   
+  .header-bg > .option > .logo {
+    color : hsl(220deg 100% 55%);
+    text-shadow:
+   -1px -1px 0 #000,  
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+     1px 1px 0 #000;
+  }

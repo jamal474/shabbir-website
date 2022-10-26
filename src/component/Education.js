@@ -2,7 +2,7 @@ import '../style/Education.css'
 
 function Education() {
   return (
-    <div className="education" id = "Education">
+    <div className="education syncscroll" name="myElements" id = "Education">
       <h2 className = "education-section-title">Education</h2>
       <div className = "education-section">
       <a href = "https://bitmesra.ac.in" className = "invisibleLink" target = "_blank" rel="noreferrer">
