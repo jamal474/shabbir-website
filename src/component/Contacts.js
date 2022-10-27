@@ -27,14 +27,14 @@ export default function Contacts() {
       };
     
   return (
-    <div className = "contacts syncscroll" name="myElements" id = "Contacts">
+    <section className = "contacts syncscroll" name="myElements" id = "Contacts">
         <h2 className = "contacts-section-title">Contacts</h2>
         <div className = "socials">
-            <a target = "_blank" rel="noreferrer" href = "https://www.linkedin.com/in/md-shabbir-jamal-0620781a0"><img src = {linkedinimg_c} className = "socials-logo" alt = "linkedin logo"/></a>
-            <a target = "_blank" rel="noreferrer" href = "https://github.com/jamal474"><img src = {githubimg_c} className = "socials-logo" alt = "github logo"/></a>
-            <a target = "_blank" rel="noreferrer" href = "https://www.instagram.com/lamaj.sm/"><img src = {instagramimg_c} className = "instagram" alt = "instagram logo"/></a>
-            <a target = "_blank" rel="noreferrer" href = "https://twitter.com/lamajribbahs"><img src = {twitterimg_c} className = "socials-logo" alt = "twitter logo"/></a>
-            <a target = "_blank" rel="noreferrer" href = "https://codeforces.com/profile/jamal474"><img src = {codeforcesimg_c} className = "codeforces-logo" alt = "codeforces logo"/></a>
+            <a target = "_blank" rel="noreferrer" href = "https://www.linkedin.com/in/md-shabbir-jamal-0620781a0"><img src = {linkedinimg_c} className = "socials-logo" alt = "linkedin logo" title = "Linkedin"/></a>
+            <a target = "_blank" rel="noreferrer" href = "https://github.com/jamal474"><img src = {githubimg_c} className = "socials-logo" alt = "github logo" title = "GitHub"/></a>
+            <a target = "_blank" rel="noreferrer" href = "https://www.instagram.com/lamaj.sm/"><img src = {instagramimg_c} className = "instagram" alt = "instagram logo" title = "Instagram"/></a>
+            <a target = "_blank" rel="noreferrer" href = "https://twitter.com/lamajribbahs"><img src = {twitterimg_c} className = "socials-logo" alt = "twitter logo" title = "twitter"/></a>
+            <a target = "_blank" rel="noreferrer" href = "https://codeforces.com/profile/jamal474"><img src = {codeforcesimg_c} className = "codeforces-logo" alt = "codeforces logo" title = "Codeforces"/></a>
         </div>
         <div className = "contacts-section">
             <div className = "front-card">
@@ -59,6 +59,6 @@ export default function Contacts() {
             </div>
         </div>
         <div className = "rights">Made By Md Shabbir Jamal &copy; {currentYear} All Rights Reserved</div>
-    </div>
+    </section>
   )
 }

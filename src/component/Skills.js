@@ -8,7 +8,7 @@ import cplusplusimg from '../assets/icon/c++.png'
 function Skills()
 {
     return(
-        <div className = "skills syncscroll" name="myElements" id = "Skills">
+        <section className = "skills syncscroll" name="myElements" id = "Skills">
             <h2 className = "skills-section-title">Skills</h2>
             <div className = "skills-section">
                 <div className = "skills-learned">
@@ -32,7 +32,7 @@ function Skills()
                     <h2 className = "skills-learned-comp">C++</h2>
                 </div>
             </div>
-        </div>
+        </section>
     )
 }
 

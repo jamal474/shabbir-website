@@ -8,7 +8,7 @@ import website_icon from '../assets/icon/Website.svg'
 function Project()
 {
     return(
-        <div className = "project syncscroll" name="myElements" id = "Project">
+        <section className = "project syncscroll" name="myElements" id = "Project">
             <h2 className = "project-section-title">Projects</h2>
             <div className="project-style-1">
                 <div className = "project-image-1">
@@ -52,7 +52,7 @@ function Project()
                     <h3 className = "proj-desc">A Porfolio for my academic information, projects etc</h3>
                 </div>
             </div>
-        </div>
+        </section>
     );
 }
 
