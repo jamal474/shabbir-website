@@ -1,5 +1,5 @@
 import '../style/Project.css'
-import quizton_img from '../assets/image/quizton.png'
+import quizton_img from '../assets/image/quizton_new.png'
 import portfolio_img from '../assets/image/portfolio.png'
 import github_icon from '../assets/icon/Github.svg'
 import website_icon from '../assets/icon/Website.svg'
@@ -19,7 +19,7 @@ function Project()
                     <div className = "overview">
                         <h1 className="desc-name">Quizton</h1>
                         <a className = "proj-link" href = "https://github.com/jamal474/quizton" target = "_blank" rel="noreferrer"><img src = {github_icon} alt = "github logo"></img></a>
-                        <a className = "proj-link" href = "https://jamal474.github.io/quizton/" target = "_blank" rel="noreferrer"><img src = {website_icon} alt = "globe logo"></img></a>
+                        <a className = "proj-link" href = "https://quizton.mdshabbirjamal.one/" target = "_blank" rel="noreferrer"><img src = {website_icon} alt = "globe logo"></img></a>
                     </div>
                     <div className = "skills-comp-used">
                         <h3>Skills  :  </h3> 
