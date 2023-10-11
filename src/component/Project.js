@@ -1,5 +1,5 @@
 import '../style/Project.css'
-import quizton_img from '../assets/image/quizton_new.PNG'
+import quizton_img from '../assets/image/quizton.png'
 import portfolio_img from '../assets/image/portfolio.png'
 import github_icon from '../assets/icon/Github.svg'
 import website_icon from '../assets/icon/Website.svg'
@@ -28,7 +28,7 @@ function Project()
                         <h3 className = "skill-comp">JavaScript</h3>
                         <h3 className = "skill-comp">ReactJS</h3>
                     </div>
-                    <h3 className = "proj-desc">A website to check your prowess in the Mathematical Knowledge</h3>
+                    <h3 className = "proj-desc">A website to check your Knowledge on Computer Science's known and unknown facts</h3>
                 </div>
             </div>
             <div className="project-style-2">
