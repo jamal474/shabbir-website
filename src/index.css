@@ -3,7 +3,24 @@ body {
   background-size: 4px 4px;
   overflow-x: hidden;
 }
-
+@font-face {
+  font-family: 'gordquick-bold';
+  src: url('./assets/font/gord-quick/Gordquick\ Bold.otf');
+  
+}
+@font-face {
+  font-family: 'mauline';
+  src: url('./assets/font/Mauline.otf');
+  
+}
+@font-face {
+  font-family: 'nephilm';
+  src: url('./assets/font/Nephilm.otf'); 
+}
+@font-face {
+  font-family: 'nephilm-italic';
+  src: url('./assets/font/Nephilm-Italic.otf'); 
+}
 @font-face {
   font-family: 'neue_haas_grotesk_displa95Blk';
   src: url('./assets/font/neuehaasdisplayblack-webfont.woff2') format('woff2'),

@@ -1,5 +1,5 @@
 import '../style/Project.css'
-import quizton_img from '../assets/image/quizton_new.png'
+import quizton_img from '../assets/image/quizton_new.PNG'
 import portfolio_img from '../assets/image/portfolio.png'
 import github_icon from '../assets/icon/Github.svg'
 import website_icon from '../assets/icon/Website.svg'

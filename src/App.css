@@ -39,14 +39,26 @@ body::-webkit-scrollbar-thumb {
 }
 
 .main-text-iam {
-  font-family: "Cookie";
+  font-family: "nephilm";
+  font-weight: 700;
   font-size: 40px;
   color: rgb(18, 8, 69);
   margin-right: 18vw;
+  padding : 0px 10px;
+  background: linear-gradient(0deg, rgb(18, 8, 69), rgb(18, 8, 69)) no-repeat
+    right bottom / 0 var(--bg-h);
+  transition: background-size 450ms, color 450ms;
+  --bg-h: 100%;
+}
+.main-text-iam:hover{
+  color : white;
+  background-size: 100% var(--bg-h);
+  background-position-x: left;
 }
 
 .main-text-name {
-  font-family: "neue_haas_grotesk_display75Bd";
+  font-family: "nephilm";
+  font-weight: 700;
   padding : 10px;
   font-size: 40px;
   color: rgb(18, 8, 69);
@@ -58,7 +70,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .main-text-name:hover {
-  font-family: "neue_haas_grotesk_display75Bd";
+  font-family: "nephilm";
   font-size: 40px;
   color: white;
   margin: 1vw 1vw;

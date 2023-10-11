@@ -32,7 +32,7 @@ function Education() {
             <h4 className = "cgpa fade">Percentage : 95.4 %</h4>
       </div>
       </a>
-
+      
       </div>
     </section>
   );
