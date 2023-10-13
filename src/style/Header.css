@@ -34,10 +34,15 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    min-width: 600px;
+    width: 90vw;
     box-shadow: 4px 0px 0px hsl(220deg 100% 55%), -4px 0px 0px hsl(220deg 100% 55%);
   }
-  
+  .side-menu{
+    display:none;
+  }
+  .hamb{
+    display:none;
+  }
  .nav-option{
     margin: 4px 10px;
     color: white;
@@ -87,4 +92,99 @@
     cursor : pointer;
   }
   
+  @media only screen and (max-width: 519px) 
+  {
+    .header{
+      width: 95vw;
+      height:45px;
+      margin-top : 0px;
+      
+    }
+    .option{
+      width: 95vw;
+      height:45px;
+      display:block;
+    }
+    .side-menu{
+      display:inline-block;
+      padding : 0px;
+      margin:0px;
+    }
+    .hamb{
+      display:inline-block;
+      cursor: pointer;
+      margin-bottom: 5px;
+    }
+    
+    #logo{
+      display: inline-block;
+      font-size: 20px;
+      margin-top: 6px;
+      margin-bottom: 0px;
+      margin-right: 54vw;
+    }
+
+    .nav{
+      width: 95vw;
+      height:fit-content;
+      display: flex;
+      flex-direction: column;
+      position:fixed;
+      background-color: black;
+      overflow: hidden;
+      max-height: 0vh;
+      margin-top:10px;
+      transition: max-height .5s ease-out;
+    }
+
+    Link:hover{
+      background-color: grey;
+    }
+    /* Style label tag */
   
+  .hamb-line {
+      background: hsl(220deg 100% 55%);
+      display:block;
+      height: 2px;
+      position: relative;
+      width: 24px;
+  
+  } /* Style span tag */
+  
+  .hamb-line::before,
+  .hamb-line::after{
+      background: hsl(220deg 100% 55%);
+      content: '';
+      display: block;
+      height: 100%;
+      position: absolute;
+      transition: all .2s ease-out;
+      width: 100%;
+  }
+  .hamb-line::before{
+      top: 5px;
+  }
+  .hamb-line::after{
+      top: -5px;
+  }
+  
+  .side-menu {
+      display: none;
+  } /* Hide checkbox */
+  .side-menu:checked ~ .nav{
+    max-height: 100vh;
+    
+  }
+  .side-menu:checked ~ .hamb .hamb-line {
+      background: transparent;
+  }
+  .side-menu:checked ~ .hamb .hamb-line::before {
+      transform: rotate(-45deg);
+      top:0;
+  }
+  .side-menu:checked ~ .hamb .hamb-line::after {
+      transform: rotate(45deg);
+      top:0;
+  }
+
+  }
