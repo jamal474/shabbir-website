@@ -1,8 +1,14 @@
+import SEO from './SEO'
 import '../style/Education.css'
 
 function Education() {
   return (
     <section className="education syncscroll" name="myElements" id = "Education">
+      <SEO
+                title="Eduaction - Md Shabbir Jamal"
+                description="I did undergrad from BIT Mesra,India. Hi, I am a CS undergrad with a strong enthusiasm for web development, machine learning, and competitive programming. Explore my interests on this website."
+                name="@lamajribbahs"
+                image="../assets/image/picture.jpg" />
       <h2 className = "education-section-title">Education</h2>
       <div className = "education-section">
       <a href = "https://bitmesra.ac.in" className = "invisibleLink" target = "_blank" rel="noreferrer">

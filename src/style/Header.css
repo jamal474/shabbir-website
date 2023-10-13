@@ -15,7 +15,7 @@
       #ffffff 0,
       #ffffff 50%
     );
-    height: 60px;
+    height: 6vh;
     border: 5px;
     position: -webkit-sticky;
     position: sticky;
@@ -28,7 +28,7 @@
     overflow-x: hidden;
     overflow-y : hidden;
     background: linear-gradient(to right, transparent 2%, black 80%);
-    height: 60px;
+    height: 6vh;
     border: 5px;
     border-radius: 0px;
     display: flex;
@@ -40,14 +40,18 @@
   .side-menu{
     display:none;
   }
+  .remside-menu
+  {
+    display: none;
+  }
   .hamb{
     display:none;
   }
  .nav-option{
-    margin: 4px 10px;
+    margin: 4px 0.5vw;
     color: white;
     padding: 10px 20px;
-    font-size: 19px;
+    font-size: 21px;
     font-weight: 400;
     border-radius: 40px;
     font-family: "nephilm";
@@ -56,12 +60,11 @@
   }
   
   .nav-option:hover {
-    margin: 2px 7px;
     color: black;
     background: white;
     padding: 10px 20px;
     font-size: 21px;
-    font-weight: 200;
+    font-weight: 700;
     border-radius: 40px;
     cursor: pointer;
   }
@@ -83,7 +86,7 @@
       0px -2px 0px white;
     margin-left: 20px;
     font-family: "Poppins";
-    font-size: 40px;
+    font-size: 2vw;
     font-weight: 900;
     margin-right: auto;
   }
@@ -109,6 +112,7 @@
       display:inline-block;
       padding : 0px;
       margin:0px;
+      border : 4px solid red;
     }
     .hamb{
       display:inline-block;
@@ -136,6 +140,7 @@
       margin-top:10px;
       transition: max-height .5s ease-out;
     }
+
 
     Link:hover{
       background-color: grey;
@@ -168,21 +173,22 @@
       top: -5px;
   }
   
-  .side-menu {
+  .side-menu, .remside-menu{
       display: none;
   } /* Hide checkbox */
-  .side-menu:checked ~ .nav{
+
+  .remside-menu ~ .nav{
     max-height: 100vh;
     
   }
-  .side-menu:checked ~ .hamb .hamb-line {
+  .remside-menu ~ .hamb .hamb-line {
       background: transparent;
   }
-  .side-menu:checked ~ .hamb .hamb-line::before {
+  .remside-menu  ~ .hamb .hamb-line::before {
       transform: rotate(-45deg);
       top:0;
   }
-  .side-menu:checked ~ .hamb .hamb-line::after {
+  .remside-menu ~ .hamb .hamb-line::after {
       transform: rotate(45deg);
       top:0;
   }

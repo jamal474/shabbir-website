@@ -1,3 +1,4 @@
+import SEO from './SEO'
 import '../style/Skills.css'
 import htmlimg from '../assets/icon/html.png'
 import cssimg from '../assets/icon/css.png'
@@ -9,6 +10,11 @@ function Skills()
 {
     return(
         <section className = "skills syncscroll" name="myElements" id = "Skills">
+            <SEO
+                title="Skills - Md Shabbir Jamal"
+                description="I have skills in problem solving, many tools like html, css, react.js, express.js, and others."
+                name="@lamajribbahs"
+                image="../assets/image/picture.jpg" />            
             <h2 className = "skills-section-title">Skills</h2>
             <div className = "skills-section">
                 <div className = "skills-learned">

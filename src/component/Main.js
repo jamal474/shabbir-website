@@ -1,9 +1,14 @@
 import profileImage from '../assets/image/profile.jpeg'
-
+import SEO from './SEO'
 function Main()
 {
     return (
-        <section className = "main syncscroll" name="myElements" id = "About">
+        <section className = "main" name="myElements" id = "About">
+            <SEO
+                title="About - Md Shabbir Jamal"
+                description="Hi, I am a CS undergrad with a strong enthusiasm for web development, machine learning, and competitive programming. Explore my interests on this website."
+                name="@lamajribbahs"
+                image="../assets/image/picture.jpg" />
             <div className = "main-text">
                 <div className = "main-text-iam">Hello I' am</div>
                 <div className = "main-text-name">Md Shabbir Jamal</div>

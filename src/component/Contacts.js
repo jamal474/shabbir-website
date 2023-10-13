@@ -8,6 +8,7 @@ import linkedinimg_c from '../assets/icon/linkedin.svg'
 import instagramimg_c from '../assets/icon/instagram.svg'
 import twitterimg_c from '../assets/icon/twitter2.svg'
 import codeforcesimg_c from '../assets/icon/codeforces.svg'
+import SEO from './SEO'
 
 
 export default function Contacts() {
@@ -28,6 +29,11 @@ export default function Contacts() {
     
   return (
     <section className = "contacts syncscroll" name="myElements" id = "Contacts">
+        <SEO
+                title="Contacts - Md Shabbir Jamal"
+                description="If you want to reach out to me, feel free to do so."
+                name="@lamajribbahs"
+                image="../assets/image/picture.jpg" />
         <h2 className = "contacts-section-title">Contacts</h2>
         <div className = "socials">
             <a target = "_blank" rel="noreferrer" href = "https://www.linkedin.com/in/md-shabbir-jamal-0620781a0"><img src = {linkedinimg_c} className = "socials-logo" alt = "linkedin logo" title = "Linkedin"/></a>

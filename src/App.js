@@ -7,10 +7,12 @@ import Education from "./component/Education";
 import Project from "./component/Project";
 import Skills from "./component/Skills";
 import Contacts from "./component/Contacts";
+import { HelmetProvider } from 'react-helmet-async';
 
 function App() {
   
   return (
+    <HelmetProvider>
     <section className="App" id = "App" onScroll={onscroll}>
       <Header/>
         <Routes>
@@ -23,6 +25,7 @@ function App() {
           {/* </Route> */}
         </Routes>
     </section>
+    </HelmetProvider>
   );
 }
 

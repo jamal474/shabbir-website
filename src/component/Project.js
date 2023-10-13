@@ -1,3 +1,4 @@
+import SEO from './SEO'
 import '../style/Project.css'
 import quizton_img from '../assets/image/quizton.png'
 import portfolio_img from '../assets/image/portfolio.png'
@@ -9,6 +10,11 @@ function Project()
 {
     return(
         <section className = "project syncscroll" name="myElements" id = "Project">
+            <SEO
+                title="Projects - Md Shabbir Jamal"
+                description="Hi, I am a CS undergrad with a strong enthusiasm for web development, machine learning, and competitive programming. Explore my interests on this website."
+                name="@lamajribbahs"
+                image="../assets/image/picture.jpg" />
             <h2 className = "project-section-title">Projects</h2>
             <div className="project-style-1">
                 <div className = "project-image-1">
