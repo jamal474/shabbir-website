@@ -5,7 +5,7 @@ function Main()
     return (
         <section className = "main" name="myElements" id = "About">
             <SEO
-                title="About - Md Shabbir Jamal"
+                title="Md Shabbir Jamal - Portfolio"
                 description="Hi, I am a CS undergrad with a strong enthusiasm for web development, machine learning, and competitive programming. Explore my interests on this website."
                 name="@lamajribbahs"
                 image="../assets/image/picture.jpg" />
