@@ -58,6 +58,7 @@ body::-webkit-scrollbar-thumb {
 
 .main-text-name {
   font-family: "nephilm";
+  text-align: center;
   font-weight: 700;
   padding : 10px;
   font-size: 40px;
@@ -114,8 +115,36 @@ body::-webkit-scrollbar-thumb {
   text-shadow: none;
   cursor : pointer;
 }
-
 .profile {
+  width : 25vw;
+  position: relative;
+  object-fit: cover;
+  margin-top: 50px;
+  margin-right: 40px;
+  object-position: 40% 20%;
+  filter: grayscale(100%);
+}
+.profile-back {
+  width: 65vh;
+  border-radius : 400px;
+  height: 65vh;
+  position: absolute;
+  top : 12vh;
+  right : 1.5vw;
+  margin-top: 50px;
+  margin-right: 30px;
+  background-image: repeating-linear-gradient(
+    -45deg,
+    rgba(0, 0, 0, 1),
+    rgba(0, 0, 0, 1) 1px,
+    transparent 2px,
+    transparent 10px
+  );
+  background-size: 8px 8px;
+  border: 2px black solid;
+}
+
+/* .profile {
   width: 25vw;
   height: 65vh;
   box-shadow: 3px 3px 0px rgb(109, 157, 255), -3px -3px 0px hsl(220deg 100% 55%);
@@ -138,7 +167,75 @@ body::-webkit-scrollbar-thumb {
   );
   background-size: 8px 8px;
   border: 2px black solid;
-}
+} */
 
+@media only screen and (max-width: 850px)
+{
+    .profile{
+      width : 250px;
+    }
+
+    .profile-back{
+      height : 250px;
+      width : 250px;
+    }
+    .main-text{
+      justify-content: center;
+    }
+    .main-text-iam{
+        font-size: 30px;
+        margin-right: 0px;
+    }
+
+    .main-text-name{
+      font-size: 40px;
+    }
+    .main-text-desc{
+        font-size: 25px;
+        color : hsl(220, 95%, 62%);
+    }
+    .resume{
+      height : 30px;
+      width : 100px;
+      font-size: 20px;
+    }
+}
+@media only screen and (max-width: 600px) 
+{
+    .main{
+      flex-direction: column-reverse;
+    }
+    .profile{
+      width : 210px;
+    }
+
+    .profile-back{
+      height : 210px;
+      width : 210px;
+      top : 10vh;
+      right : 6vw;
+    }
+    .main-text{
+      justify-content: space-between;
+    }
+    .main-text-iam{
+        font-size: 20px;
+        margin-right: 0px;
+    }
+
+    .main-text-name{
+      font-size: 25px;
+      font-weight: 700;
+    }
+    .main-text-desc{
+        font-size: 18px;
+        color : hsl(220, 95%, 62%);
+    }
+    .resume{
+      height : 25px;
+      width : 90px;
+      font-size: 16px;
+    }
+}
 /*---------------------------------------------------------------------------------------*/
 
