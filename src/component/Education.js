@@ -16,10 +16,10 @@ function Education() {
       <div className = "education-section">
       <div className = "card">
             <div className = "content">
-                    <div class="front">
+                    <div className="front">
                       <img src = {btech}  alt = "organisation name" className='front-img'/>
                     </div>
-                    <div class="back">
+                    <div className="back">
                             <a href = "https://bitmesra.ac.in" className = "invisibleLink" target = "_blank" rel="noreferrer">
                             <div className="college">
                                   <h4 className = "name">Birla Institute of Technolgy</h4>
@@ -34,10 +34,10 @@ function Education() {
       </div>
       <div className = "card">
             <div className = "content">
-                    <div class="front">
+                    <div className="front">
                       <img src = {aissce}  alt = "organisation name" className='front-img'/>
                     </div>
-                    <div class="back">
+                    <div className="back">
                             <a href = "https://davbistupur.org/" className = "invisibleLink" target = "_blank" rel="noreferrer">
                             <div className="school-12">
                                   <h4 className = "name">D. A. V. Public School</h4>
