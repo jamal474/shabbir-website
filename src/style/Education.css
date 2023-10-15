@@ -19,8 +19,65 @@
   margin-bottom : 20px;
   margin-top: 40px;
 }
+.score-section-title{
+  margin-right: auto;
+  margin-left: 3vw;
+  color: black;
+  text-shadow: 4px 0px 0px white, -4px 0px 0px white, 0px 4px 0px white,
+    0px -4px 0px white;
+  font-family: "Poppins";
+  font-size: 30px;
+  font-weight: 700px;
+  transition : all 0.20s linear;
+  padding : 4px 20px;
+  margin-bottom: -5px;
+  margin-top: 40px;
+}
+.score-section-description{
+  margin-right: auto;
+  margin-left: 3vw;
+  color: black;
+  text-shadow: 4px 0px 0px white, -4px 0px 0px white, 0px 4px 0px white,
+    0px -4px 0px white;
+  font-family: "Poppins";
+  font-size: 25px;
+  font-weight: 300px;
+  transition : all 0.20s linear;
+  padding : 4px 20px;
+  margin-bottom : 20px;
+  margin-top: 0px;
+}
+.score-list {
+  display: block;
+  margin-right: auto;
+  margin-left: 3vw;
+}
 
-.education-section-title:hover {
+.score-element {
+  display: block;
+  position: relative;
+  color: black;
+  font-family: "Poppins";
+  font-size: 22px;
+  font-weight: 300px;
+}
+
+.score-element:not(:last-child) {
+  margin-bottom: 16px;
+}
+
+.score-element:before {
+  content: "";
+  position: absolute;
+  top: 1.2em;
+  left: -30px;
+  margin-top: -.9em;
+  background: linear-gradient(45deg, hsl(220deg 100% 55%), #f9dd94);
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+}
+.education-section-title:hover, .score-section-title:hover {
   color :rgb(109, 157, 255);
   box-shadow: 4px 0px 0px hsl(220deg 100% 55%),
   -4px 0px 0px  hsl(220deg 100% 55%);
@@ -165,6 +222,31 @@
   }
 
   @media only screen and (max-width: 600px) {
+    .education-section-title {
+      font-size : 25px;
+      color :rgb(109, 157, 255);
+      box-shadow: 4px 0px 0px hsl(220deg 100% 55%),
+      -4px 0px 0px  hsl(220deg 100% 55%);
+      margin-right: auto;
+      margin-left: auto;
+    }
+    .score-section-title {
+      font-size : 25px;
+      color :rgb(109, 157, 255);
+      box-shadow: 4px 0px 0px hsl(220deg 100% 55%),
+      -4px 0px 0px  hsl(220deg 100% 55%);
+      margin-bottom: 10px;
+      margin-right: auto;
+      margin-left: auto;
+    }
+    .score-section-description {
+      margin-left: 1vw;
+      margin-right: 0px;
+      font-size: 2.5vh;
+    }
+    .score-element {
+      font-size: 2.5vh;
+    }
     .front{
       display : none;
     }

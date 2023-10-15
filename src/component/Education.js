@@ -69,7 +69,17 @@ function Education() {
             </div>
       </div>
       </div>
-      
+      <h2 className="score-section-title">Scores</h2>
+      <div className = "score-section-description">Scores achieved on varoius Competitive Examinations :</div>
+      <div className = "score-section">
+          <ul className = "score-list">
+                <li className = "score-element">Achieved <b>8252</b> ( All India Rank ) in <b>JEE Advance 2020</b> </li>
+                <li className = "score-element">Achieved <b>98.6238085</b> percentile in <b>JEE Mains 2020</b></li>
+                <li className = "score-element">Achieved a <b>Perfect Score [ 100 / 100 ]</b> in Mathematics in the AISSCE 2020 examination ( class 12 )</li>
+                <li className = "score-element">Achieved <b>408</b> (All India Rank) in <b>WBJEE 2020</b></li>
+                <li className = "score-element">Achieved <b>3413</b> (All India Rank) in <b>VITEEE 2020</b></li>
+          </ul>
+      </div>
     </section>
   );
 }
