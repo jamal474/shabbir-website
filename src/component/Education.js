@@ -5,7 +5,7 @@ function Education() {
   return (
     <section className="education syncscroll" name="myElements" id = "Education">
       <SEO
-                title="Eduaction - Md Shabbir Jamal"
+                title="Education - Md Shabbir Jamal"
                 description="I did undergrad from BIT Mesra,India. Hi, I am a CS undergrad with a strong enthusiasm for web development, machine learning, and competitive programming. Explore my interests on this website."
                 name="@lamajribbahs"
                 image="../assets/image/picture.jpg" />

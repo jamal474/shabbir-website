@@ -16,6 +16,7 @@ export default function Contacts() {
     const currentYear = d.getFullYear(); 
     const form = React.useRef();
     const sendEmail = (e) => {
+        alert("Message Sent - :)")
         e.preventDefault();
     
         emailjs.sendForm('service_x6vvvwt', 'template_3ayolkq', form.current, 'h77SqRUuu3eDAdQ3a')
@@ -28,7 +29,7 @@ export default function Contacts() {
       };
     
   return (
-    <section className = "contacts syncscroll" name="myElements" id = "Contacts">
+    <section className = "contacts" name="myElements" id = "Contacts">
         <SEO
                 title="Contacts - Md Shabbir Jamal"
                 description="If you want to reach out to me, feel free to do so."
