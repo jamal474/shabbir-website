@@ -1,4 +1,3 @@
-import profileImage from '../assets/image/profile.jpeg'
 import profilePic from '../assets/image/profile-pic.png'
 import SEO from './SEO'
 function Main()
@@ -18,7 +17,7 @@ function Main()
             </div>
             <div className = "main-profile">
                 <div className = "profile-back"></div>
-                <img className = "profile" src ={profilePic} alt = "profile picture"/>
+                <img className = "profile" src ={profilePic} alt = "profile visual"/>
             </div>
         </section>
     )

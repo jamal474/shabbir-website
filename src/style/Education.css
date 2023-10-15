@@ -29,7 +29,7 @@
 
 .education-section {
     background-color: white;
-    min-height : 500px;
+    /* min-height : 500px; */
     background-image: repeating-linear-gradient(
       -45deg,
       rgba(0, 0, 0, 1),
@@ -38,7 +38,7 @@
       transparent 6px
     );
     background-size: 8px 8px;
-    height: 35vw;
+    height: 20vw;
     display: flex;
     padding: 5vw;
     justify-content: space-between;
@@ -49,69 +49,150 @@
   .college,
   .school-10,
   .school-12{
-    width: 22vw;
-    height: 30vw;
-    min-width: 250px;
-    min-height : 430px;
+    width: 26vw;
+    height: 15vw;
     color: white;
-    background : linear-gradient(to bottom, rgb(94, 105, 126) 10% ,rgb(30, 62, 126));
+    background : #294467;
     border-radius : 5px;
     display: flex;
     flex-direction: column;
-    flex-wrap : wrap;
+    padding: 0px;
+    /* flex-wrap : wrap; */
     overflow-y :hidden;
     overflow-x :hidden;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
-    transition: all 2s ease-in-out; 
-  
+    transition: all 2s ease-in-out;
   }
-  
+  .college:hover,
+  .school-10:hover,
+  .school-12:hover{
+    cursor : pointer;
+  }
   .name {
     font-family : 'Poppins';
-    font-size : 26px;
+    font-size : 1.5vw;
     text-align: center;
-    margin-top : 2vw;
-    margin-bottom: 2vw;
+    margin : 6px 0px;
   }
   
   .location,.degree,.duration,.cgpa {
     font-family : 'Poppins';
     font-weight: 100;
-    font-size : 18px;
+    font-size : 1vw;
     text-align: center;
-    margin-top : 1vw;
+    margin : 4px 0px;
   
-  }
-  
-  .college:hover {
-    background-image: url("../assets/image/bitmesra.png");
-    background-repeat : no-repeat;
-    z-index : 2;
-    background-size: cover;
-    background-position: 50% 0%;
-    cursor : pointer;
-  }
-  
-  .school-10:hover, .school-12:hover {
-    background-image: url("../assets/image/dav.png");
-    background-repeat : no-repeat;
-    background-size: cover;
-    background-position: 50% 0%;
-    cursor : pointer;
-  }
-  .college:hover .fade{
-    display : none;
-  
-  }
-  .school-12:hover .fade{
-    display : none;
-  }
-  .school-10:hover .fade{
-    display : none;
   }
   
   .invisibleLink {
     all : unset;
   }
   
+  .card {
+    width: 26vw;
+    height: 15vw;
+    margin: 10px;
+  /*   float: left; */
+    perspective: 500px;
+  }
+  
+  .content {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    transition: transform 1s;
+    transform-style: preserve-3d;
+  }
+  
+  .card:hover .content {
+    transform: rotateY( 180deg ) ;
+    transition: transform 0.5s;
+  }
+  
+  .front,
+  .back {
+    position: absolute;
+    text-align: center;
+    border-radius: 5px;
+    backface-visibility: hidden;
+  }
+  .front-img{
+    width: 26vw;
+    height: 15vw;
+  }
+  
+  .back {
+    background: #03446A;
+    color: white;
+    transform: rotateY( 180deg );
+  }
+
+  @media only screen and (max-width: 850px) {
+    .education-section {
+      flex-direction: column;
+      height: 80vh;
+      padding : 10px;
+    }
+    .college,
+  .school-10,
+  .school-12{
+    width : 35vw;
+    height : 25vh;
+  }
+
+  .card {
+    width : 35vw;
+    height : 25vh;
+  }
+
+  .front-img{
+    width : 35vw;
+    height : 25vh;
+  }
+  .name {
+    font-family : 'Poppins';
+    font-size : 2.8vh;
+    text-align: center;
+    margin : 6px 0px;
+  }
+  
+  .location,.degree,.duration,.cgpa {
+    font-size : 2vh;
+  }
+
+  }
+
+  @media only screen and (max-width: 600px) {
+    .front{
+      display : none;
+    }
+    .back{
+      transform: none;
+    }
+    .card:hover .content {
+      transform : none;
+      transition: none;
+    }
+    .education-section {
+      height: 80vh;
+      padding : 10px;
+    }
+    .college,
+  .school-10,
+  .school-12{
+    width : 80vw;
+    height : 25vh;
+  }
+
+  .card {
+    width : 80vw;
+    height : 25vh;
+  }
+
+  .front-img{
+    width : 80vw;
+    height : 25vh;
+  }
+  }

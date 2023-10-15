@@ -1,5 +1,8 @@
 import SEO from './SEO'
 import '../style/Education.css'
+import aisse from '../assets/image/aisse.png'
+import aissce from '../assets/image/aissce.png'
+import btech from '../assets/image/btech.png'
 
 function Education() {
   return (
@@ -11,35 +14,62 @@ function Education() {
                 image="../assets/image/picture.jpg" />
       <h2 className = "education-section-title">Education</h2>
       <div className = "education-section">
-      <a href = "https://bitmesra.ac.in" className = "invisibleLink" target = "_blank" rel="noreferrer">
-      <div className="college">
-            <h4 className = "name fade">Birla Institute of Technolgy</h4>
-            <h4 className = "location fade">Mesra, Ranchi</h4>
-            <h4 className = "degree fade">Bachelor of Technology in CSE</h4>
-            <h4 className = "duration fade">2020 - 2024</h4>
-            <h4 className = "cgpa fade">Cgpa : 8.6 (4 semester)</h4>
+      <div className = "card">
+            <div className = "content">
+                    <div class="front">
+                      <img src = {btech}  alt = "organisation name" className='front-img'/>
+                    </div>
+                    <div class="back">
+                            <a href = "https://bitmesra.ac.in" className = "invisibleLink" target = "_blank" rel="noreferrer">
+                            <div className="college">
+                                  <h4 className = "name">Birla Institute of Technolgy</h4>
+                                  <h4 className = "location">Mesra, Ranchi</h4>
+                                  <h4 className = "degree">Bachelor of Technology in CSE</h4>
+                                  <h4 className = "duration">2020 - 2024</h4>
+                                  <h4 className = "cgpa">Cgpa : 8.5 (6 semester)</h4>
+                            </div>
+                            </a>
+                    </div>
+            </div>
       </div>
-      </a>
-      <a href = "https://davbistupur.org/" className = "invisibleLink" target = "_blank" rel="noreferrer">
-      <div className="school-12">
-            <h4 className = "name fade">D. A. V. Public School</h4>
-            <h4 className = "location fade">Bistupur, Jamshedpur</h4>
-            <h4 className = "degree fade">AISSCE</h4>
-            <h4 className = "duration fade">2018 - 2020</h4>
-            <h4 className = "cgpa fade">Percentage : 94.4 %</h4>
+      <div className = "card">
+            <div className = "content">
+                    <div class="front">
+                      <img src = {aissce}  alt = "organisation name" className='front-img'/>
+                    </div>
+                    <div class="back">
+                            <a href = "https://davbistupur.org/" className = "invisibleLink" target = "_blank" rel="noreferrer">
+                            <div className="school-12">
+                                  <h4 className = "name">D. A. V. Public School</h4>
+                                  <h4 className = "location">Bistupur, Jamshedpur</h4>
+                                  <h4 className = "degree">AISSCE</h4>
+                                  <h4 className = "duration">2018 - 2020</h4>
+                                  <h4 className = "cgpa">Percentage : 94.4 %</h4>
+                            </div>
+                            </a>
+                    </div>
+            </div>
       </div>
-      </a>
-      <a href = "https://davbistupur.org/" className = "invisibleLink" target = "_blank" rel="noreferrer">
-      <div className="school-10">
-            <h4 className = "name fade">D. A. V. Public School</h4>
-            <h4 className = "location fade">Bistupur, Jamshedpur</h4>
-            <h4 className = "degree fade">AISSE</h4>
-            <h4 className = "duration fade">     - 2018</h4>
-            <h4 className = "cgpa fade">Percentage : 95.4 %</h4>
+      <div className = "card">
+            <div className = "content">
+                    <div className="front">
+                      <img src = {aisse} alt = "organisation name" className='front-img'/>
+                    </div>
+                    <div className="back">
+                            <a href = "https://davbistupur.org/" className = "invisibleLink" target = "_blank" rel="noreferrer">
+                            <div className="school-10">
+                                  <h4 className = "name">D. A. V. Public School</h4>
+                                  <h4 className = "location">Bistupur, Jamshedpur</h4>
+                                  <h4 className = "degree">AISSE</h4>
+                                  <h4 className = "duration">Passout - 2018</h4>
+                                  <h4 className = "cgpa">Percentage : 95.4 %</h4>
+                            </div>
+                            </a>
+                    </div>
+            </div>
       </div>
-      </a>
+      </div>
       
-      </div>
     </section>
   );
 }
