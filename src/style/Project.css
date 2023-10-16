@@ -26,7 +26,7 @@
     cursor : default;
 }
 .project-style-1 {
-  margin: 8vh 0vw;
+  margin: 5vh 0vw;
   width: 90vw;
   display: flex;
   flex-wrap: wrap;
@@ -36,8 +36,8 @@
 }
 
 .project-style-2 {
-  margin: 8vh 0vw;
-  width: 85vw;
+  margin: 5vh 0vw;
+  width: 90vw;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row-reverse;
@@ -46,11 +46,15 @@
 }
 
 .description {
-  background: white;
+  background: linear-gradient(45deg, hsl(220deg 100% 55%), #f9dd94);
+  border-radius: 15px;
+  box-shadow: 2px 2px 4px black;
   width: 40vw;
   height: 50vh;
-  margin-left: auto;
-  padding: 2px 10px;
+  /* margin-left: auto; */
+  padding-top: 2px;
+  padding-left: 10px;
+  padding-right: 10px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -68,24 +72,40 @@
   height: 40vh;
   filter: grayscale(100%);
   margin-left: 40px;
-  box-shadow: 3px 3px 0px rgb(109, 157, 255),
-   -3px -3px 0px hsl(220deg 100% 55%);
+  /* box-shadow: 3px 3px 2px  #f9dd94,
+   -3px -3px 2px  hsl(220deg 100% 55%); */
+   border-width: 6px;
+   border-style: solid;
+   border-image: linear-gradient(45deg, hsl(220deg 100% 55%), #f9dd94) 1;
   position: relative;
-  object-fit: cover;
-  object-position: 40% 20%;
-  transition: all 0.5s;
+  object-fit:cover;
+  /* object-position: 40% 20%; */
+  transition: all 0.3s;
 }
 
 .project-profile:hover {
   filter: grayscale(0%);
 }
 
-.project-profile-back {
-  width: 36vw;
+.project-profile-back-1 {
+  width: 35vw;
   height: 40vh;
   position: absolute;
-  padding: 0vw 2vw;
+  /* padding: 0vw 2vw; */
   margin-top: 40px;
+  background-image: repeating-linear-gradient(
+    -45deg,
+    rgba(0, 0, 0, 1),
+    rgba(0, 0, 0, 1) 1.5px,
+    transparent 1px,
+    transparent 6px
+  );
+  background-size: 8px 8px;
+  border: 2px black solid;
+  transition: all 2s ease-in-out;
+}
+
+.project-profile-back-1:hover {
   background-image: repeating-linear-gradient(
     -45deg,
     rgba(0, 0, 0, 1),
@@ -94,35 +114,53 @@
     transparent 10px
   );
   background-size: 8px 8px;
-  border: 2px black solid;
-  transition: all 2s ease-in-out;
 }
-
-.project-profile-back:hover {
+.project-profile-back-2 {
+  width: 35vw;
+  height: 40vh;
+  position: absolute;
+  /* padding: 0vw 2vw; */
+  margin-top: 40px;
+  margin-left: 80px;
   background-image: repeating-linear-gradient(
     -45deg,
     rgba(0, 0, 0, 1),
-    rgba(0, 0, 0, 1) 1px,
+    rgba(0, 0, 0, 1) 1.5px,
     transparent 1px,
     transparent 6px
   );
   background-size: 8px 8px;
+  border: 2px black solid;
+  transition: all 2s ease-in-out;
 }
 
+.project-profile-back-2:hover {
+  background-image: repeating-linear-gradient(
+    -45deg,
+    rgba(0, 0, 0, 1),
+    rgba(0, 0, 0, 1) 1px,
+    transparent 2px,
+    transparent 10px
+  );
+  background-size: 8px 8px;
+}
 .proj-link > img {
-  width: 30px;
+  width: 3.6vh;
+  border-radius: 34px;
   margin: 10px 10px;
+  
 }
 
 .proj-link > img:hover {
   border-radius: 20px;
-  border: 2px rgb(109, 157, 255) solid;
-  margin: 10px 8px;
+  border: 3px white solid;
+  margin: 10px 7px;
 }
 
 .desc-name {
-  font-family: "Poppins";
-  font-size: 30px;
+  font-family: "nephilm";
+  letter-spacing: 2px;
+  font-size:2.1vw;
   color: rgb(18, 8, 69);
   margin-right: 20px;
 }
@@ -130,36 +168,180 @@
 .skill-comp {
   color: white;
   background-color: rgb(18, 8, 69);
-  padding: 5px 10px;
+  padding: 5px 12px;
   text-align: center;
-  border-radius: 20px;
-  font-size: 20px;
+  border-radius: 10px;
+  font-size: 1vw;
   font-weight: 100;
   font-family: "Poppins";
+  margin : 2px 4px;
 }
 
+.skill-comp:hover {
+  color: #f9dd94;
+  background-color: rgb(54, 51, 70); 
+  cursor : pointer;
+}
+.skills-heading {
+  margin-right: 20px;
+}
 .skills-comp-used {
   font-family: "Poppins";
   font-size: 20px;
   font-weight: 100;
   color: rgb(18, 8, 69);
+  padding-left: 30px;
   margin: 4px 0px;
   display: flex;
-  justify-content: space-around;
+  justify-content: flex-start;
+  align-items: center;
   flex-wrap: wrap;
 }
 
 .proj-desc {
   font-family: "Poppins";
-  font-size: 20px;
-  font-weight : 100;
+  padding-left : 30px;
+  font-size: 2.4vh;
+  font-weight : 500;
   color: rgb(18, 8, 69);
-  margin: 4px 0px;
+  margin: 0px 0px;
 }
-
+.proj-desc-points{
+  margin-top : 0px;
+  padding-left : 20px;
+}
+.proj-desc-points ul{
+  margin : 0px;
+}
+.proj-desc-point {
+  display: block;
+  position: relative;
+  color: black;
+  font-family: "Poppins";
+  font-size: 1vw;
+  font-weight: 300px;
+}
+.proj-desc-point:before {
+  content: "";
+  position: absolute;
+  top: 1.2em;
+  left: -30px;
+  margin-top: -.9em;
+  background: linear-gradient(45deg, yellow, orange);
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+}
+.lia{
+  color : white;
+}
+.lia:hover {
+  cursor: pointer;
+}
 .overview {
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  padding-left : 30px;
   margin: 0vw;
+}
+@media only screen and (max-width: 900px)
+{
+  .desc-name{
+    font-size: 4vw;
+  }
+
+  .skill-comp{
+    font-size: 2vw;
+    padding: 2px 6px;
+    margin : 1px 3px 2px 0px; 
+  }
+  .proj-desc{
+    font-size: 2vh;
+    font-weight: 600;
+    margin-top : 10px;
+    padding-left: 20px;
+    padding-right: 10px;
+  }
+  .proj-desc-point{
+    display : none;
+  }
+  .description{
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .overview{
+    padding-left: 20px;
+    padding-right: 10px;
+  }
+  .skills-comp-used{
+    padding-left: 20px;
+    padding-right: 10px;
+  }
+}
+@media only screen and (max-width: 600px)
+{
+  .project-style-1 {
+    margin : 2vh 0vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .project-style-2 {
+    margin : 2vh 0vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .project-style-2 {
+    margin : 2vh 0vw;
+  }
+  .project-image-1 {
+    display : none;
+  }
+  .project-image-2 {
+    display : none;
+  }
+  .description{
+    width: 80vw;
+    height: 44vh;
+    padding-top : 10px;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .desc-name{
+    font-size: 6vw;
+    margin-right : 0px;
+    margin-top : 10px;
+    margin-bottom: 10px;
+    
+  }
+  .overview{
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .skills-comp-used{
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .skill-comp{
+    font-size: 3.5vw;
+    padding: 3px 8px;
+    margin : 2px 3px 2px 0px;
+  }
+  .proj-desc{
+    font-size: 2vh;
+    font-weight: 600;
+    margin-top : 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .proj-desc-point{
+    display : none;
+  }
+  
 }
