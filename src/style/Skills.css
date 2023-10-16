@@ -43,33 +43,23 @@
 }
 
 .skills-learned {
-    background-color: white;
+    background: linear-gradient(45deg, hsl(220deg 100% 55%), #f9dd94);
+    border-radius: 15px;
+    box-shadow: 2px 2px 4px white;
+    flex: 1 0 21%;
+    width : 2vh;
+    margin  :20px;
     display : flex;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
     border-radius : 20px;
     padding:5px 10px;
-    box-shadow: inset 1px 1px 2px black,inset -2px -2px 2px rgb(192, 192, 192);
     transition : all 0.25s linear;
 }
 .skills-learned:hover {
-    box-shadow: 1px 1px 2px black, -2px -2px 2px rgb(192, 192, 192);
     cursor : pointer;
 }
 
-.skills-learned:hover .skills-learned-logo{
-    width : 54px;
-    margin : 0px 5px;
-}
-
-.skills-learned:hover .skills-learned-comp{
-    font-family: "Poppins";
-    font-size : 28px;
-    font-weight: 900;
-    padding : 0px 5px;
-    color: black;
-    
-}
 .skills-learned-logo {
     width : 50px;
     margin : 0px 5px;
@@ -83,4 +73,39 @@
     padding : 0px 5px;
     color: black;
     transition : all 0.25s linear;
+}
+@media only screen and (max-width: 600px)
+{
+    .skills-section{
+        flex-direction : row;
+        height : 100vh;
+        margin-bottom: 20px;
+    }
+    .skills-section-title{
+        font-size : 25px;
+      color :rgb(109, 157, 255);
+      box-shadow: 4px 0px 0px hsl(220deg 100% 55%),
+      -4px 0px 0px  hsl(220deg 100% 55%);
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .skills-learned {
+        /* flex: 1 0 21%; */
+        width : fit-content;
+        height : 8vh;
+        margin  :10px;
+        border-radius : 20px;
+        margin : 10px;
+        padding : 5px 10px;
+        /* padding:5px 10px; */
+    }
+    .skills-learned-logo{
+        width : 9vw;
+        margin : 0px 2px;
+    }
+    .skills-learned-comp{
+        font-size : 5vw;
+        font-weight: 900;
+        padding : 0px ;
+    }
 }

@@ -281,6 +281,14 @@
 }
 @media only screen and (max-width: 600px)
 {
+  .project-section-title{
+    font-size : 25px;
+      color :rgb(109, 157, 255);
+      box-shadow: 4px 0px 0px hsl(220deg 100% 55%),
+      -4px 0px 0px  hsl(220deg 100% 55%);
+    margin-right: auto;
+    margin-left: auto;
+  }
   .project-style-1 {
     margin : 2vh 0vw;
     display: flex;

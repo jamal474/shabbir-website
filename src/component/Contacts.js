@@ -51,7 +51,7 @@ export default function Contacts() {
                 </div>
                 <div className = "location">
                     <a href = "https://goo.gl/maps/z2rYbtV6idLyeRDF8" target = "_blank" rel="noreferrer"><img src = {locationimg} className = "contact-logos" alt = "location pin logo"/></a>
-                    <a href = "https://goo.gl/maps/z2rYbtV6idLyeRDF8" target = "_blank" rel="noreferrer"><h4 className = "contact-val">Room B-8 Hostel 13 BIT Mesra, Ranchi</h4></a>
+                    <a href = "https://goo.gl/maps/z2rYbtV6idLyeRDF8" target = "_blank" rel="noreferrer"><h4 className = "contact-val">Room 337 Hostel 12 BIT Mesra, Ranchi</h4></a>
                 </div>
             </div>
             <div className = "back-card">
@@ -65,7 +65,7 @@ export default function Contacts() {
                 </div>
             </div>
         </div>
-        <div className = "rights">Made By Md Shabbir Jamal &copy; {currentYear} All Rights Reserved</div>
+        <div className = "rights">Made with ❤️ by Md Shabbir Jamal &copy; {currentYear}</div>
     </section>
   )
 }
