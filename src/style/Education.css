@@ -108,8 +108,7 @@
   .school-12{
     width: 26vw;
     height: 15vw;
-    color: white;
-    background : #294467;
+    /* background : #294467; */
     border-radius : 5px;
     display: flex;
     flex-direction: column;
@@ -141,7 +140,9 @@
     margin : 4px 0px;
   
   }
-  
+  .back b{
+    letter-spacing: 1px;
+  }
   .invisibleLink {
     all : unset;
   }
@@ -181,8 +182,10 @@
   }
   
   .back {
-    background: #03446A;
+    background: linear-gradient(45deg, hsl(220deg 100% 55%), #f9dd94);;
+    /* background: #03446A; */
     color: white;
+    text-shadow: 1px 0px black;
     transform: rotateY( 180deg );
   }
 
@@ -229,6 +232,9 @@
       -4px 0px 0px  hsl(220deg 100% 55%);
       margin-right: auto;
       margin-left: auto;
+    }
+    .score-section {
+      padding : 0px 10px;
     }
     .score-section-title {
       font-size : 25px;

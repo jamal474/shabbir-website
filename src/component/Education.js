@@ -26,7 +26,7 @@ function Education() {
                                   <h4 className = "location">Mesra, Ranchi</h4>
                                   <h4 className = "degree">Bachelor of Technology in CSE</h4>
                                   <h4 className = "duration">2020 - 2024</h4>
-                                  <h4 className = "cgpa">Cgpa : 8.5 (6 semester)</h4>
+                                  <h4 className = "cgpa"><b>Cgpa : 8.5 (6 semester)</b></h4>
                             </div>
                             </a>
                     </div>
@@ -42,9 +42,9 @@ function Education() {
                             <div className="school-12">
                                   <h4 className = "name">D. A. V. Public School</h4>
                                   <h4 className = "location">Bistupur, Jamshedpur</h4>
-                                  <h4 className = "degree">AISSCE</h4>
+                                  <h4 className = "degree">AISSCE ( CBSE )</h4>
                                   <h4 className = "duration">2018 - 2020</h4>
-                                  <h4 className = "cgpa">Percentage : 94.4 %</h4>
+                                  <h4 className = "cgpa"><b>Percentage : 94.4 %</b></h4>
                             </div>
                             </a>
                     </div>
@@ -60,9 +60,9 @@ function Education() {
                             <div className="school-10">
                                   <h4 className = "name">D. A. V. Public School</h4>
                                   <h4 className = "location">Bistupur, Jamshedpur</h4>
-                                  <h4 className = "degree">AISSE</h4>
+                                  <h4 className = "degree">AISSE ( CBSE )</h4>
                                   <h4 className = "duration">Passout - 2018</h4>
-                                  <h4 className = "cgpa">Percentage : 95.4 %</h4>
+                                  <h4 className = "cgpa"><b>Percentage : 95.4 %</b></h4>
                             </div>
                             </a>
                     </div>
