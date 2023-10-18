@@ -8,7 +8,8 @@ function SEO({title, description, name, image=""})
             
             <title>{title}</title>
             <meta name='description' content={description} />
-            
+            <meta property="og:site_name" content="Md Shabbir Jamal" />
+            <meta property="og:site" content="Md Shabbir Jamal"/>
             <meta property="og:type" content="website" />
             <meta property="og:title" content={title} />
             <meta property="og:image" content={image}/>
