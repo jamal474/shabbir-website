@@ -1,4 +1,4 @@
-import profilePic from '../assets/image/profile-pic.png'
+import profilePic from '../assets/image/profile-pic-2.png'
 import SEO from './SEO'
 function Main()
 {
