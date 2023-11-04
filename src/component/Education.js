@@ -17,7 +17,8 @@ function Education() {
       <div className = "card">
             <div className = "content">
                     <div className="front">
-                      <img src = {btech}  alt = "organisation name" className='front-img'/>
+                      {/* <img src = {btech}  alt = "organisation name" className='front-img'/> */}
+                        <h2 className = "front-text">BTech</h2>
                     </div>
                     <div className="back">
                             <a href = "https://bitmesra.ac.in" className = "invisibleLink" target = "_blank" rel="noreferrer">
@@ -35,7 +36,8 @@ function Education() {
       <div className = "card">
             <div className = "content">
                     <div className="front">
-                      <img src = {aissce}  alt = "organisation name" className='front-img'/>
+                      {/* <img src = {aissce}  alt = "organisation name" className='front-img'/> */}
+                      <h2 className = "front-text">AISSCE</h2>
                     </div>
                     <div className="back">
                             <a href = "https://davbistupur.org/" className = "invisibleLink" target = "_blank" rel="noreferrer">
@@ -53,7 +55,8 @@ function Education() {
       <div className = "card">
             <div className = "content">
                     <div className="front">
-                      <img src = {aisse} alt = "organisation name" className='front-img'/>
+                      {/* <img src = {aisse} alt = "organisation name" className='front-img'/> */}
+                      <h2 className = "front-text">AISSE</h2>
                     </div>
                     <div className="back">
                             <a href = "https://davbistupur.org/" className = "invisibleLink" target = "_blank" rel="noreferrer">

@@ -176,9 +176,16 @@
     border-radius: 5px;
     backface-visibility: hidden;
   }
-  .front-img{
+  .front {
+    background-color: #FFC700;
     width: 26vw;
     height: 15vw;
+    font-family: unbounded;
+    font-size: 3vw;
+  }
+  .front-text{
+    margin-top : 20%;
+    
   }
   
   .back {

@@ -3,6 +3,8 @@ import '../style/Project.css'
 import quizton_img from '../assets/image/quizton.png'
 import portfolio_img from '../assets/image/portfolio.png'
 import depression_img from '../assets/image/deprT.jpg'
+import emotion_img from '../assets/image/emotion.png'
+import noteracy_img from '../assets/image/noteracy.png'
 import github_icon from '../assets/icon/Github.svg'
 import website_icon from '../assets/icon/Website.svg'
 
@@ -17,6 +19,43 @@ function Project()
                 name="@lamajribbahs"
                 image="../assets/image/picture.jpg" />
             <h2 className = "project-section-title">Projects</h2>
+            <div className="project-style-2">
+                <div className = "project-image-2">
+                    <div className = "project-profile-back-2"></div>
+                    <img className = "project-profile" src = {noteracy_img} alt = "project preview shot"></img>
+                </div>
+                <div className = "description">
+                    <div className = "overview">
+                        <h1 className="desc-name">Noteracy</h1>
+                        <a className = "proj-link" href = "https://github.com/jamal474/NoteracyApp" target = "_blank" rel="noreferrer"><img src = {github_icon} alt = "github logo"></img></a>
+                        <a className = "proj-link" href = "https://noteracy.cyclic.app" target = "_blank" rel="noreferrer"><img src = {website_icon} alt = "globe logo"/></a>
+                    </div>
+                    <div className = "skills-comp-used">
+                        {/* <div className = "skills-heading" >Skills  :  </div>  */}
+                        <div className = "skill-comp">Express.js</div>
+                        <div className = "skill-comp">Node.js</div>
+                        <div className = "skill-comp">MongoDB</div>
+                        <div className = "skill-comp">React.js</div>
+                        <div className = "skill-comp">Passport.js</div>
+                        <div className = "skill-comp">HTML</div>
+                        <div className = "skill-comp">CSS</div>
+                    </div>
+                    <div className = "proj-desc">Noteracy is an all-in-one solution for seamless note-taking and organization.</div>
+                    <div className = "proj-desc-points">
+                        <ul>
+                            <li className = "proj-desc-point">
+                            backend was developed following <span style = {{color : "white"}}>REST API</span> principles, utilizing Express.js, Node.js, and MongoDB for data storage
+                            </li>
+                            <li className = "proj-desc-point">
+                            Created the frontend with React.js and implemented secure authentication using Passport.js with <span style = {{color : "white"}}>google-oauth-20 strategy</span> and deployed using <span style = {{color : "white"}}>cyclic.sh</span>
+                            </li>
+                            <li className = "proj-desc-point">
+                            Designed an attractive and functional user interface for note <span style = {{color : "white"}}>creation, updates, deletions, and efficient search</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
             <div className="project-style-1">
                 <div className = "project-image-1">
                     <div className = "project-profile-back-1"></div>
@@ -44,10 +83,10 @@ function Project()
                             Extracted data using <a href = "https://github.com/JustAnotherArchivist/snscrape" target = "_blank" rel="noreferrer" className = "lia">SNScraper</a> and processed it for training
                             </li>
                             <li className = "proj-desc-point">
-                            Models like Bi-LSTM with attention, lightGBM and others were used with WAE for classifcation of previously unseen data.
+                            Models like <span style = {{color : "white"}}>Bi-LSTM with attention</span>, <span style = {{color : "white"}}>lightGBM</span> and others were used with WAE for classifcation of previously unseen data.
                             </li>
                             <li className = "proj-desc-point">
-                            Using predicted classifications we compared the Depression prevalence among Developed and Developing Countries.
+                            Using predicted classifications we compared the Depression prevalence among <span style = {{color : "white"}}>Developed and Developing Countries</span>.
                             </li>
                         </ul>
                     </div>
@@ -106,10 +145,48 @@ function Project()
                     <div className = "proj-desc-points">
                         <ul>
                             <li className = "proj-desc-point">
-                                Fully Responsive Website
+                            <span style = {{color : "white"}}>Fully Responsive</span> Website, designed and implemented using React.js
                             </li>
                             <li className = "proj-desc-point">
-                                Deployed using the Netlify platform
+                                Deployed using the <span style = {{color : "white"}}>Netlify</span> platform
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div className="project-style-2">
+                <div className = "project-image-2">
+                    <div className = "project-profile-back-2"></div>
+                    <img className = "project-profile" src = {emotion_img} alt = "project preview shot"></img>
+                </div>
+                <div className = "description">
+                    <div className = "overview">
+                        <h1 className="desc-name">Emotion Detection</h1>
+                        <a className = "proj-link" href = "https://github.com/jamal474/emotiontest" target = "_blank" rel="noreferrer"><img src = {github_icon} alt = "github logo"></img></a>
+                        <a className = "proj-link" href = "https://textemotion.mdshabbirjamal.one/" target = "_blank" rel="noreferrer"><img src = {website_icon} alt = "globe logo"></img></a>
+                    </div>
+                    <div className = "skills-comp-used">
+                        {/* <div className = "skills-heading" >Skills  :  </div>  */}
+                        <div className = "skill-comp">PyScript.js</div>
+                        <div className = "skill-comp">sklearn</div>
+                        <div className = "skill-comp">pandas</div>
+                        <div className = "skill-comp">ML</div>
+                        <div className = "skill-comp">python</div>
+                        <div className = "skill-comp">HTML</div>
+                        <div className = "skill-comp">CSS</div>
+                        <div className = "skill-comp">ReactJS</div>
+                    </div>
+                    <div className = "proj-desc">Detect Emotions like Joy, Sad, Anger, etc from texts using Machine Learning</div>
+                    <div className = "proj-desc-points">
+                        <ul>
+                            <li className = "proj-desc-point">
+                            The website uses machine learning, specifically Scikit-learn's <span style = {{color : "white"}}>LinearSVC</span>
+                            </li>
+                            <li className = "proj-desc-point">
+                            It's trained on data from thecleverprogrammer.com and uses a <span style = {{color : "white"}}>tfidf vectorizer</span> with 2-gram feature extraction
+                            </li>
+                            <li className = "proj-desc-point">
+                            <span style = {{color : "white"}}>Accuracy : 61 %</span>
                             </li>
                         </ul>
                     </div>
