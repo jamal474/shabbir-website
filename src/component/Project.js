@@ -1,6 +1,6 @@
 import SEO from './SEO'
 import '../style/Project.css'
-import quizton_img from '../assets/image/quizton.png'
+import quizton_img from '../assets/image/quizton.jpg'
 import portfolio_img from '../assets/image/portfolio.png'
 import depression_img from '../assets/image/deprT.jpg'
 import emotion_img from '../assets/image/emotion.png'
@@ -110,7 +110,7 @@ function Project()
                         <div className = "skill-comp">JavaScript</div>
                         <div className = "skill-comp">ReactJS</div>
                     </div>
-                    <div className = "proj-desc">A website to check your Knowledge on Computer Science's some known and some obscure facts</div>
+                    <div className = "proj-desc">A website to check your Knowledge on various topics like Computer Science, Mathematics, Sports, History, and Animals .</div>
                     <div className = "proj-desc-points">
                         <ul>
                             <li className = "proj-desc-point">
