@@ -3,10 +3,10 @@ import emailjs from '@emailjs/browser';
 import '../style/Contacts.css'
 import gmailimg from '../assets/icon/mailGoogle.svg'
 import locationimg from '../assets/icon/location.svg' 
-import githubimg_c from '../assets/icon/github.svg'
+import githubimg_c from '../assets/icon/githubicon.svg'
 import linkedinimg_c from '../assets/icon/lkdn.svg'
 import instagramimg_c from '../assets/icon/insta.svg'
-import twitterimg_c from '../assets/icon/tweet.svg'
+import twitterimg_c from '../assets/icon/x.svg'
 import codeforcesimg_c from '../assets/icon/cforces.svg'
 import SEO from './SEO'
 
