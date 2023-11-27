@@ -144,14 +144,27 @@
   );
   background-size: 8px 8px;
 }
-.proj-link > img {
-  width: 3.6vh;
-  border-radius: 34px;
+.code {
+  width: 4.8vh;
+  border-radius: 30px;
   margin: 10px 10px;
   
 }
-
-.proj-link > img:hover {
+.code:hover {
+  cursor : pointer;
+  border-radius: 20px;
+  border: 3px white solid;
+  margin: 10px 7px;
+}
+.eye {
+  width: 4vh;
+  padding : 4px;
+  border-radius: 30px;
+  margin: 10px 10px;
+  
+}
+.eye:hover {
+  cursor : pointer;
   border-radius: 20px;
   border: 3px white solid;
   margin: 10px 7px;
@@ -241,10 +254,49 @@
 .overview {
   display: flex;
   justify-content: flex-start;
-  align-items: center;
+  align-items:center;
   padding-left : 30px;
   margin: 0vw;
 }
+
+/* .proj-redirect {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+.proj-redirect-button {
+  align-content: center;
+
+  margin-top: 40px;
+  height : fit-content;
+  width : fit-content;
+  padding : 10px 20px;
+  border: 2px solid red;
+  border-radius: 50px;
+  text-align: center;
+  font-family: unbounded;
+  font-size: 18px;
+  letter-spacing: 1px;
+  font-weight: 600;
+  color: white;
+  text-shadow: 2px 2px 2px black;
+  background : linear-gradient(-45deg, #FFA63D, #FF3D77, #338AFF, #3CF0C5);
+  background-size : 300% 300%;
+  filter: grayscale(20%);
+  animation: changeBg 4s linear infinite;
+}
+/* rgb(229, 93, 135), rgb(95, 195, 228) */
+/* .proj-redirect-button:hover {
+  cursor : pointer;
+  animation: changeBg 1s ease infinite;
+  box-shadow: -3px 0px 0px orange, 3px 0px 0px red;
+}
+
+.proj-redirect-icon { 
+  width : 30px;
+} */ 
+
 @media only screen and (max-width: 900px)
 {
   .desc-name{

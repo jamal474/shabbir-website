@@ -5,8 +5,8 @@ import portfolio_img from '../assets/image/portfolio.png'
 import depression_img from '../assets/image/deprT.jpg'
 import emotion_img from '../assets/image/emotion.png'
 import noteracy_img from '../assets/image/noteracy.png'
-import github_icon from '../assets/icon/Github.svg'
-import website_icon from '../assets/icon/Website.svg'
+import eye from '../assets/icon/eye.svg'
+import code from '../assets/icon/code.svg'
 
 
 function Project()
@@ -27,8 +27,9 @@ function Project()
                 <div className = "description">
                     <div className = "overview">
                         <h1 className="desc-name">Noteracy</h1>
-                        <a className = "proj-link" href = "https://github.com/jamal474/NoteracyApp" target = "_blank" rel="noreferrer"><img src = {github_icon} alt = "github logo"></img></a>
-                        <a className = "proj-link" href = "https://noteracy.cyclic.app" target = "_blank" rel="noreferrer"><img src = {website_icon} alt = "globe logo"/></a>
+                        <p style = {{"font-size" : "40px", "margin" : "0px 20px 0px 0px", }}>~</p>
+                        <a className = "proj-link" href = "https://github.com/jamal474/NoteracyApp" target = "_blank" rel="noreferrer"><img className = "code" src = {code} alt = "code-logo"/></a>
+                        <a className = "proj-link" href = "https://noteracy.cyclic.app" target = "_blank" rel="noreferrer"><img className = "eye" src = {eye} alt = "eye-logo"/></a>
                     </div>
                     <div className = "skills-comp-used">
                         {/* <div className = "skills-heading" >Skills  :  </div>  */}
@@ -64,7 +65,8 @@ function Project()
                 <div className = "description">
                     <div className = "overview">
                         <h1 className="desc-name">Depression using Twitter</h1>
-                        <a className = "proj-link" href = "https://github.com/jamal474/Depression-from-Twitter" target = "_blank" rel="noreferrer"><img src = {github_icon} alt = "github logo"></img></a>
+                        <p style = {{"font-size" : "40px", "margin" : "0px 20px 0px 0px", }}>~</p>
+                        <a className = "proj-link" href = "https://github.com/jamal474/Depression-from-Twitter" target = "_blank" rel="noreferrer"><img className = "code" src = {code} alt = "code-logo"/></a>
                     </div>
                     <div className = "skills-comp-used">
                         {/* <div className = "skills-heading" >Skills  :  </div>  */}
@@ -100,8 +102,9 @@ function Project()
                 <div className = "description">
                     <div className = "overview">
                         <h1 className="desc-name">Quizton</h1>
-                        <a className = "proj-link" href = "https://github.com/jamal474/quizton" target = "_blank" rel="noreferrer"><img src = {github_icon} alt = "github logo"></img></a>
-                        <a className = "proj-link" href = "https://quizton.mdshabbirjamal.one/" target = "_blank" rel="noreferrer"><img src = {website_icon} alt = "globe logo"></img></a>
+                        <p style = {{"font-size" : "40px", "margin" : "0px 20px 0px 0px", }}>~</p>
+                        <a className = "proj-link" href = "https://github.com/jamal474/quizton" target = "_blank" rel="noreferrer"><img className = "code" src = {code} alt = "code-logo"/></a>
+                        <a className = "proj-link" href = "https://quizton.mdshabbirjamal.one/" target = "_blank" rel="noreferrer"><img className = "eye" src = {eye} alt = "eye-logo"/></a>
                     </div>
                     <div className = "skills-comp-used">
                         {/* <div className = "skills-heading" >Skills  :  </div>  */}
@@ -131,8 +134,9 @@ function Project()
                 <div className = "description">
                     <div className = "overview">
                         <h1 className="desc-name">Portfolio</h1>
-                        <a className = "proj-link" href = "https://github.com/jamal474/portfolio" target = "_blank" rel="noreferrer"><img src = {github_icon} alt = "github logo"/></a>
-                        <a className = "proj-link" href = "https://www.mdshabbirjamal.one" target = "_blank" rel="noreferrer"><img src = {website_icon} alt = "globe logo"/></a>
+                        <p style = {{"font-size" : "40px", "margin" : "0px 20px 0px 0px", }}>~</p>
+                        <a className = "proj-link" href = "https://github.com/jamal474/portfolio" target = "_blank" rel="noreferrer"><img className = "code" src = {code} alt = "code-logo"/></a>
+                        <a className = "proj-link" href = "https://www.mdshabbirjamal.one" target = "_blank" rel="noreferrer"><img className = "eye" src = {eye} alt = "eye-logo"/></a>
                     </div>
                     <div className = "skills-comp-used">
                         {/* <div>Skills  :  </div> */}
@@ -162,8 +166,9 @@ function Project()
                 <div className = "description">
                     <div className = "overview">
                         <h1 className="desc-name">Emotion Detection</h1>
-                        <a className = "proj-link" href = "https://github.com/jamal474/emotiontest" target = "_blank" rel="noreferrer"><img src = {github_icon} alt = "github logo"></img></a>
-                        <a className = "proj-link" href = "https://textemotion.mdshabbirjamal.one/" target = "_blank" rel="noreferrer"><img src = {website_icon} alt = "globe logo"></img></a>
+                        <p style = {{"font-size" : "40px", "margin" : "0px 20px 0px 0px", }}>~</p>
+                        <a className = "proj-link" href = "https://github.com/jamal474/emotiontest" target = "_blank" rel="noreferrer"><img className = "code" src = {code} alt = "code-logo"/></a>
+                        <a className = "proj-link" href = "https://textemotion.mdshabbirjamal.one/" target = "_blank" rel="noreferrer"><img className = "eye" src = {eye} alt = "eye-logo"/></a>
                     </div>
                     <div className = "skills-comp-used">
                         {/* <div className = "skills-heading" >Skills  :  </div>  */}
