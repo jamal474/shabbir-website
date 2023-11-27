@@ -88,62 +88,72 @@ body::-webkit-scrollbar-thumb {
 }
 
 .resume {
-  width: 150px;
-  height: 40px;
-  border: 0px;
-  margin-top: 4vw;
-  border-radius: 20px;
-  box-shadow: 1px 1px 6px black, -2px -2px 5px rgb(109, 157, 255);
-  font-family: "neue_haas_grotesk_display65Md";
-  font-size: 20px;
-  color: rgb(18, 8, 69);
-  text-shadow: 2px 2px 0px white, -2px -2px 0px white;
-  background-image: repeating-linear-gradient(
-    -45deg,
-    rgba(0, 0, 0, 0.25),
-    rgba(0, 0, 0, 0.25) 1px,
-    transparent 1px,
-    transparent 6px
-  );
-  background-size: 4px 4px;
-  transition: all 0.25s;
-}
-.resume:hover {
-  background-color: rgb(18, 8, 69);
+  margin-top: 40px;
+  height : fit-content;
+  width : fit-content;
+  padding : 10px 20px;
+  border: 2px solid red;
+  border-radius: 50px;
+  text-align: center;
+  font-family: unbounded;
+  font-size: 18px;
+  letter-spacing: 1px;
+  font-weight: 600;
   color: white;
-  box-shadow: none;
-  text-shadow: none;
+  text-shadow: 2px 2px 2px black;
+  background : linear-gradient(-45deg, #FFA63D, #FF3D77, #338AFF, #3CF0C5);
+  background-size : 300% 300%;
+  filter: grayscale(20%);
+  animation: changeBg 4s linear infinite;
+}
+/* rgb(229, 93, 135), rgb(95, 195, 228) */
+.resume:hover {
   cursor : pointer;
+  animation: changeBg 1s ease infinite;
+  box-shadow: -3px 0px 0px orange, 3px 0px 0px red;
 }
 .profile {
   width : 25vw;
   position: relative;
   object-fit: cover;
   margin-top: 50px;
-  margin-right: 40px;
+  margin-right: 50px;
   object-position: 40% 20%;
   filter: grayscale(100%);
 }
 .profile-back {
-  width: 65vh;
+  width: 20vw;
+  height : 20vw;
   border-radius : 400px;
-  height: 65vh;
   position: absolute;
-  top : 12vh;
-  right : 1.5vw;
-  margin-top: 50px;
-  margin-right: 30px;
+  margin-top: 0px;
+  margin-left: 200px;
   background-image: repeating-linear-gradient(
-    -45deg,
-    rgba(0, 0, 0, 1),
-    rgba(0, 0, 0, 1) 1px,
-    transparent 2px,
-    transparent 10px
+    45deg,
+    rgba(0, 0, 0,1),
+    rgb(0,0,0,1) 1.5px,
+    transparent 1px,
+    transparent 6px
   );
   background-size: 8px 8px;
   border: 2px black solid;
 }
-
+.profile-back-2 {
+  width: 20vw;
+  height : 20vw;
+  position: absolute;
+  margin-top: 200px;
+  margin-left: -20px;
+  background-image: repeating-linear-gradient(
+    -45deg,
+    rgba(0, 0, 0, 1),
+    rgba(0, 0, 0, 1) 1.5px,
+    transparent 1px,
+    transparent 6px
+  );
+  background-size: 8px 8px;
+  border: 2px black solid;
+}
 /* .profile {
   width: 25vw;
   height: 65vh;
@@ -175,10 +185,6 @@ body::-webkit-scrollbar-thumb {
       width : 250px;
     }
 
-    .profile-back{
-      height : 250px;
-      width : 250px;
-    }
     .main-text{
       justify-content: center;
     }
@@ -195,9 +201,9 @@ body::-webkit-scrollbar-thumb {
         color : hsl(220, 95%, 62%);
     }
     .resume{
-      height : 30px;
-      width : 100px;
-      font-size: 20px;
+      margin-top: 30px;
+      padding : 6px 10px;
+      font-size: 15px;
     }
 }
 @media only screen and (max-width: 600px) 
@@ -209,12 +215,6 @@ body::-webkit-scrollbar-thumb {
       width : 210px;
     }
 
-    .profile-back{
-      height : 210px;
-      width : 210px;
-      top : 10vh;
-      right : 6vw;
-    }
     .main-text{
       justify-content: space-between;
     }
@@ -232,10 +232,26 @@ body::-webkit-scrollbar-thumb {
         color : hsl(220, 95%, 62%);
     }
     .resume{
-      height : 25px;
-      width : 90px;
-      font-size: 16px;
+      margin-top: 30px;
+      padding : 6px 10px;
+      font-size: 15px;
+      font-weight: 500;
     }
 }
+
+@keyframes changeBg {
+  0% {
+      background-position: 0% 50%;
+  }
+
+  50% {
+      background-position: 100% 50%;
+  }
+
+  100% {
+      background-position: 0% 50%;
+  }
+}
+
 /*---------------------------------------------------------------------------------------*/
 

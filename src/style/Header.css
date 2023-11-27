@@ -51,20 +51,19 @@
     margin: 4px 0.5vw;
     color: white;
     padding: 10px 20px;
+    border : 1px rgba(104, 104, 104,0) solid;
     font-size: 21px;
-    font-weight: 400;
+    font-weight: 500;
     border-radius: 40px;
-    font-family: "nephilm";
-    word-spacing: 2px;
-    transition: all 0.4s;
+    font-family: unbounded;
+    letter-spacing: 1px;
+    transition: all linear 0.3s;
   }
   
   .nav-option:hover {
     color: black;
     background: white;
-    padding: 10px 20px;
-    font-size: 21px;
-    font-weight: 700;
+    border: 1px solid red;
     border-radius: 40px;
     cursor: pointer;
   }
@@ -98,10 +97,6 @@
   {
       .nav-option {
         font-size: 18px;
-      }
-      .nav-option:hover{
-        font-size: 18px;
-        padding: 6px 14px;
       }
   }
   @media only screen and (max-width: 600px) 
