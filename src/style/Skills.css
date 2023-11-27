@@ -1,111 +1,107 @@
 .skills {
-    display : flex;
+    display: flex;
     flex-direction: column;
 }
 
 .skills-section-title {
     margin-right: auto;
-  margin-left: 3vw;
-  color: black;
-  text-shadow: 4px 0px 0px white, -4px 0px 0px white, 0px 4px 0px white,
-    0px -4px 0px white;
-  font-family: "Poppins";
-  font-size: 30px;
-  font-weight: 700px;
-  transition : all 0.20s linear;
-  padding : 4px 20px;
-}
-
-.skills-section-title:hover {
-    color :rgb(109, 157, 255);
-    box-shadow: 4px 0px 0px hsl(220deg 100% 55%),
-    -4px 0px 0px  hsl(220deg 100% 55%);
-    cursor : default;
+    margin-left: auto;
+    color: color-mix(in srgb, rgba(255, 255, 0, 1) 50%, rgba(0, 255, 255, 1) 50%);
+    font-family: unbounded;
+    font-family: "Poppins";
+    font-size: 30px;
+    font-weight: 700px;
+    transition: all 0.20s linear;
+    padding: 4px 20px;
+    box-shadow: 4px 0px 0px color-mix(in srgb, rgba(255, 25, 255, 1) 50%, rgba(0, 255, 255, 1) 50%),
+    -4px 0px 0px  color-mix(in srgb, rgba(255, 25, 255, 1) 50%, rgba(0, 255, 255, 1) 50%);
 }
 
 .skills-section {
-    background-color: white;
-    background-image: repeating-linear-gradient(
-      45deg,
-      rgba(0, 0, 0, 1),
-      rgba(0, 0, 0, 1) 1px,
-      transparent 1px,
-      transparent 6px
-    );
-    background-size: 8px 8px;
     height: 40vh;
-    display: flex;
     padding: 5vw;
-    justify-content: space-between;
-    flex-wrap : wrap;
-    align-items: center;
-    box-shadow: 0px -2px 0px black, 0px 2px 0px black;
+}
+
+.language, .frontend, .backend, .database {
+    display : flex;
+    width : 90vw;
+    justify-content: flex-start;
+    background-image: repeating-linear-gradient(
+    45deg,
+    rgba(255, 25, 255,1),
+    rgb(0,255,255,1) 1px,
+    transparent 1px,
+    transparent 10px
+  );
+    margin : 0px 0px 50px 0px;
+    /* border : 1px solid red; */
+}
+.language-title, .frontend-title, .backend-title, .database-title {
+    color : color-mix(in srgb, rgba(255, 255, 0, 1) 50%, rgba(0, 255, 255, 1) 50%);
+    text-shadow: 2px 2px 2px black;
+    font-family: unbounded;
+    font-size: 2vw;
+    font-weight: 700;
+    width : 40%;
+    height : 100%;
+    margin-top: auto;
+    margin-bottom: auto;
+    text-align: center;
+}
+
+.skillrow{
+    width : 60%;
+    display: flex;
+    margin-left : auto;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .skills-learned {
-    background: linear-gradient(45deg, hsl(220deg 100% 55%), #f9dd94);
-    border-radius: 15px;
-    box-shadow: 2px 2px 4px white;
-    flex: 1 0 21%;
-    width : 2vh;
-    margin  :20px;
-    display : flex;
+    background: black;
+    border : 1px solid white;
+    width: 200px;
+    margin: 20px;
+    display: flex;
     justify-content: center;
     align-items: center;
-    border-radius : 20px;
-    padding:5px 10px;
-    transition : all 0.25s linear;
+    padding: 5px 10px;
 }
+
 .skills-learned:hover {
-    cursor : pointer;
+    background : rgb(22, 22, 22);
+    cursor: pointer;
 }
 
 .skills-learned-logo {
-    width : 50px;
-    margin : 0px 5px;
-    transition : all 0.25s linear;
+    width: 50px;
+    margin: 0px 5px;
+    transition: all 0.25s linear;
 }
 
 .skills-learned-comp {
     font-family: "Poppins";
-    font-size : 25px;
-    font-weight: 900;
-    padding : 0px 5px;
-    color: black;
-    transition : all 0.25s linear;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 0px 5px;
+    color: white;
+    transition: all 0.25s linear;
 }
-@media only screen and (max-width: 600px)
+@media only screen and (max-width: 850px)
 {
-    .skills-section{
-        flex-direction : row;
-        height : 100vh;
+    .language, .frontend, .backend, .database {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .language-title, .frontend-title, .backend-title, .database-title {
+        font-size: 5vh;
+        width : 100%;
+        margin: 10px 0px 0px 0px;
+    }
+    .skillrow {
+        width : 100%;
         margin-bottom: 20px;
-    }
-    .skills-section-title{
-        font-size : 25px;
-      color :rgb(109, 157, 255);
-      box-shadow: 4px 0px 0px hsl(220deg 100% 55%),
-      -4px 0px 0px  hsl(220deg 100% 55%);
-        margin-right: auto;
-        margin-left: auto;
-    }
-    .skills-learned {
-        /* flex: 1 0 21%; */
-        width : fit-content;
-        height : 8vh;
-        margin  :10px;
-        border-radius : 20px;
-        margin : 10px;
-        padding : 5px 10px;
-        /* padding:5px 10px; */
-    }
-    .skills-learned-logo{
-        width : 9vw;
-        margin : 0px 2px;
-    }
-    .skills-learned-comp{
-        font-size : 5vw;
-        font-weight: 900;
-        padding : 0px ;
     }
 }

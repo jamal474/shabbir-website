@@ -7,42 +7,82 @@
 
 .education-section-title {
   margin-right: auto;
-  margin-left: 3vw;
-  color: black;
-  text-shadow: 4px 0px 0px white, -4px 0px 0px white, 0px 4px 0px white,
-    0px -4px 0px white;
-  font-family: "Poppins";
+  margin-left: auto;
+  color: color-mix(in srgb, rgba(255, 255, 0, 1) 50%, rgba(0, 255, 255, 1) 50%);
+  font-family: unbounded;
   font-size: 30px;
   font-weight: 700px;
   transition : all 0.20s linear;
   padding : 4px 20px;
   margin-bottom : 20px;
   margin-top: 40px;
+
+  box-shadow: 4px 0px 0px color-mix(in srgb, rgba(255, 25, 255, 1) 50%, rgba(0, 255, 255, 1) 50%),
+  -4px 0px 0px  color-mix(in srgb, rgba(255, 25, 255, 1) 50%, rgba(0, 255, 255, 1) 50%);
+}
+
+.blob1 {
+  width: 30vw;
+  height : 30vw;
+  border-radius : 400px;
+  position: absolute;
+  top : 130px;
+  left : -400px;
+
+  margin-top: 0px;
+  margin-left: 200px;
+  background-image: repeating-linear-gradient(
+    45deg,
+    rgba(255, 25, 255,1),
+    rgb(0,255,255,1) 1.5px,
+    transparent 1px,
+    transparent 6px
+  );
+  background-size: 8px 8px;
+  border: 2px white solid;
+}
+
+.blob2 {
+  width: 30vw;
+  height : 30vw;
+  position: absolute;
+  top : 700px;
+  right : -400px;
+  z-index: -1;
+  background-image: repeating-linear-gradient(
+    -45deg,
+    rgba(255, 255, 0, 1),
+    rgba(0, 255, 255, 1) 1.5px,
+    transparent 1px,
+    transparent 6px
+  );
+  transform: rotate(45deg);
+  background-size: 8px 8px;
+  border: 2px white solid;
 }
 .score-section-title{
   margin-right: auto;
-  margin-left: 3vw;
-  color: black;
-  text-shadow: 4px 0px 0px white, -4px 0px 0px white, 0px 4px 0px white,
-    0px -4px 0px white;
-  font-family: "Poppins";
+  margin-left: auto;
+  /* margin-left: 3vw; */
+  color: color-mix(in srgb, rgba(255, 255, 0, 1) 50%, rgba(0, 255, 255, 1) 50%);
+  font-family: unbounded;
   font-size: 30px;
   font-weight: 700px;
   transition : all 0.20s linear;
   padding : 4px 20px;
   margin-bottom: -5px;
   margin-top: 40px;
+
+  box-shadow: 4px 0px 0px color-mix(in srgb, rgba(255, 25, 255, 1) 50%, rgba(0, 255, 255, 1) 50%),
+  -4px 0px 0px  color-mix(in srgb, rgba(255, 25, 255, 1) 50%, rgba(0, 255, 255, 1) 50%);
 }
 .score-section-description{
   margin-right: auto;
   margin-left: 3vw;
-  color: black;
-  text-shadow: 4px 0px 0px white, -4px 0px 0px white, 0px 4px 0px white,
-    0px -4px 0px white;
+  color: white;
   font-family: "Poppins";
   font-size: 25px;
-  font-weight: 300px;
-  transition : all 0.20s linear;
+  font-weight: 400;
   padding : 4px 20px;
   margin-bottom : 20px;
   margin-top: 0px;
@@ -56,7 +96,7 @@
 .score-element {
   display: block;
   position: relative;
-  color: black;
+  color: white;
   font-family: "Poppins";
   font-size: 22px;
   font-weight: 300px;
@@ -77,30 +117,14 @@
   width: 15px;
   border-radius: 50%;
 }
-.education-section-title:hover, .score-section-title:hover {
-  color :rgb(109, 157, 255);
-  box-shadow: 4px 0px 0px hsl(220deg 100% 55%),
-  -4px 0px 0px  hsl(220deg 100% 55%);
-  cursor : default;
-}
 
 .education-section {
-    background-color: white;
     /* min-height : 500px; */
-    background-image: repeating-linear-gradient(
-      -45deg,
-      rgba(0, 0, 0, 1),
-      rgba(0, 0, 0, 1) 1px,
-      transparent 1px,
-      transparent 6px
-    );
-    background-size: 8px 8px;
     height: 20vw;
     display: flex;
     padding: 5vw;
     justify-content: space-between;
     align-items: center;
-    box-shadow: 0px -2px 0px black, 0px 2px 0px black;
   }
   
   .college,
@@ -151,49 +175,27 @@
     width: 26vw;
     height: 15vw;
     margin: 10px;
-  /*   float: left; */
-    perspective: 500px;
+    border-radius: 5px;
+    border : 1px solid red;
+
   }
   
-  .content {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    box-shadow: 0 0 15px rgba(0,0,0,0.1);
-    transition: transform 1s;
-    transform-style: preserve-3d;
-  }
-  
-  .card:hover .content {
-    transform: rotateY( 180deg ) ;
-    transition: transform 0.5s;
-  }
-  
-  .front,
   .back {
     position: absolute;
     text-align: center;
     border-radius: 5px;
     backface-visibility: hidden;
-  }
-  .front {
-    background-color: #FFC700;
-    width: 26vw;
-    height: 15vw;
-    font-family: unbounded;
-    font-size: 3vw;
-  }
-  .front-text{
-    margin-top : 20%;
-    
-  }
-  
-  .back {
-    background: linear-gradient(45deg, hsl(220deg 100% 55%), #f9dd94);;
-    /* background: #03446A; */
+    background: linear-gradient(45deg, hsl(220deg 100% 55%), #f9dd94);
     color: white;
     text-shadow: 1px 0px black;
-    transform: rotateY( 180deg );
+  }
+
+  .separator{
+    height : 2px;
+    width : 90vw;
+    background-image: linear-gradient(45deg, hsl(220deg 100% 55%), #f9dd94);
+    margin-left: auto;
+    margin-right: auto;
   }
 
   @media only screen and (max-width: 850px) {
@@ -214,10 +216,6 @@
     height : 25vh;
   }
 
-  .front-img{
-    width : 35vw;
-    height : 25vh;
-  }
   .name {
     font-family : 'Poppins';
     font-size : 2.8vh;
@@ -234,9 +232,6 @@
   @media only screen and (max-width: 600px) {
     .education-section-title {
       font-size : 25px;
-      color :rgb(109, 157, 255);
-      box-shadow: 4px 0px 0px hsl(220deg 100% 55%),
-      -4px 0px 0px  hsl(220deg 100% 55%);
       margin-right: auto;
       margin-left: auto;
     }
@@ -245,9 +240,6 @@
     }
     .score-section-title {
       font-size : 25px;
-      color :rgb(109, 157, 255);
-      box-shadow: 4px 0px 0px hsl(220deg 100% 55%),
-      -4px 0px 0px  hsl(220deg 100% 55%);
       margin-bottom: 10px;
       margin-right: auto;
       margin-left: auto;
@@ -266,9 +258,7 @@
       width: 12px;
       margin-top: -.9em;
     }
-    .front{
-      display : none;
-    }
+
     .back{
       transform: none;
     }
@@ -291,9 +281,17 @@
     width : 80vw;
     height : 25vh;
   }
-
-  .front-img{
+  .blob1{
     width : 80vw;
-    height : 25vh;
+    height : 80vw;
+    top : 120px;
+    left : -350px;
   }
+  .blob2{
+    width : 40vw;
+    height : 40vw;
+    top : 800px;
+    right : -90px;
+  }
+
   }

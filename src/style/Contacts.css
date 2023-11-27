@@ -7,23 +7,19 @@
 
 .contacts-section-title {
   margin-right: auto;
-  margin-left: 3vw;
-  color: black;
-  text-shadow: 4px 0px 0px white, -4px 0px 0px white, 0px 4px 0px white,
-    0px -4px 0px white;
+  margin-left: auto;
+  color: color-mix(in srgb, rgba(255, 255, 0, 1) 50%, rgba(0, 255, 255, 1) 50%);
+  font-family: unbounded;
   font-family: "Poppins";
   font-size: 30px;
   font-weight: 700px;
   transition: all 0.2s linear;
   padding: 4px 20px;
+
+  box-shadow: 4px 0px 0px color-mix(in srgb, rgba(255, 25, 255, 1) 50%, rgba(0, 255, 255, 1) 50%),
+  -4px 0px 0px  color-mix(in srgb, rgba(255, 25, 255, 1) 50%, rgba(0, 255, 255, 1) 50%);
 }
 
-.contacts-section-title:hover {
-  color: rgb(109, 157, 255);
-  box-shadow: 4px 0px 0px hsl(220deg 100% 55%),
-    -4px 0px 0px hsl(220deg 100% 55%);
-  cursor: default;
-}
 
 .contacts-section {
     width : 100vw;
@@ -51,13 +47,13 @@ a {
 }
 
 .back-card {
-    background-image: repeating-linear-gradient(
-        11deg,
-        rgba(0, 0, 0, 0.25),
-        rgb(7, 105, 253, 1) 1px,
-        transparent 2px,
-        transparent 5px
-      );
+  background-image: repeating-linear-gradient(
+    45deg,
+    rgba(255, 25, 255,1),
+    rgb(0,255,255,1) 1.5px,
+    transparent 1px,
+    transparent 10px
+  );
   width: 50vw;
   height: 85vh;
   position: relative;
@@ -169,10 +165,10 @@ a {
     border-radius: 40px;
 }
 .instagram:hover, .codeforces-logo:hover {
-    border: 2px rgb(7, 105, 253, 1) solid;
+    border: 2px color-mix(in srgb, rgba(255, 255, 0, 1) 50%, rgba(0, 255, 255, 1) 50%) solid;
 }
 .socials-logo:hover {
-    border: 2px rgb(7, 105, 253, 1) solid;
+    border: 2px color-mix(in srgb, rgba(255, 255, 0, 1) 50%, rgba(0, 255, 255, 1) 50%) solid;
 }
 
 .socials:hover {
@@ -182,9 +178,9 @@ a {
 .rights {
     width : 100%;
     text-align: center;
-    background-color: rgb(18, 8, 69);
+    background-color: color-mix(in srgb, rgba(255, 255, 0, 1) 50%, rgba(0, 255, 255, 1) 50%);
     font-family: "Poppins";
-    color : white;
+    color : black;
 }
 
 

@@ -1,200 +1,220 @@
 /*----Header----------------------------------------------------------------------*/
 .header {
-    opacity: 0.8;
-    width : 90vw;
-    max-width: 100vw;
-    margin: auto;
-    margin-top: 30px;
-    background-size: 12px 12px;
-    z-index: 2;
-    top : 0;
-    background-image: repeating-linear-gradient(
-      45deg,
-      #000000 0,
-      #000000 1.2000000000000002px,
-      #ffffff 0,
-      #ffffff 50%
-    );
-    height: 6vh;
-    border: 5px;
-    position: -webkit-sticky;
-    position: sticky;
-    top : 0;
-    border-radius: 0px;
-    transition : all 1s linear;
+  opacity: 0.8;
+  width: 100vw;
+  margin-top: 30px;
+  background-size: 12px 12px;
+  z-index: 2;
+  top: 0;
+  height: 6vh;
+  position: -webkit-sticky;
+  position: sticky;
+  transition: all 1s linear;
+}
+
+.option {
+  overflow-x: hidden;
+  overflow-y: hidden;
+  background: linear-gradient(to right, transparent 2%, black 80%);
+  height: 6vh;
+  border: 5px;
+  border-radius: 0px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 95vw;
+  box-shadow: 4px 0px 0px color-mix(in srgb, rgba(255, 25, 255, 1) 50%, rgba(0, 255, 255, 1) 50%), -4px 0px 0px color-mix(in srgb, rgba(255, 255, 0, 1) 50%, rgba(0, 255, 255, 1) 50%);
+}
+
+.side-menu {
+  display: none;
+}
+
+.remside-menu {
+  display: none;
+}
+
+.hamb {
+  display: none;
+}
+
+.nav-option {
+  margin: 4px 0.5vw;
+  color: white;
+  padding: 10px 20px;
+  border: 1px rgba(104, 104, 104, 0) solid;
+  font-size: 21px;
+  font-weight: 500;
+  border-radius: 40px;
+  font-family: unbounded;
+  letter-spacing: 1px;
+  transition: all linear 0.3s;
+}
+
+.nav-option:hover {
+  border: 1px solid color-mix(in srgb, rgba(255, 255, 0, 1) 50%,rgba(0, 255, 255, 1) 50%);
+  border-radius: 40px;
+  cursor: pointer;
+}
+.current-option  {
+  border: 1px solid color-mix(in srgb, rgba(255, 25, 255, 1) 50%, rgba(0, 255, 255, 1) 50%); 
+}
+
+.active {
+  margin: 5px 10px;
+  color: black;
+  background: white;
+  padding: 10px 20px;
+  font-size: 21px;
+  font-weight: 200;
+  border-radius: 40px;
+  cursor: pointer;
+}
+
+.logo {
+  color: color-mix(in srgb, rgba(255, 255, 0, 1) 50%, rgba(0, 255, 255, 1) 50%);
+  /* text-shadow: 2px 0px 0px color-mix(in srgb, rgba(255, 25, 255, 1) 50%, rgba(0, 255, 255, 1) 50%), -1px 0px 0px white, 0px 2px 0px color-mix(in srgb, rgba(255, 255, 0, 1) 50%, rgba(0, 255, 255, 1) 50%),
+    0px -1px 0px white; */
+  /* -webkit-text-stroke: 1px white; */
+  margin-left: 20px;
+  font-family: unbounded;
+  font-size: 2vw;
+  font-weight: 600;
+  margin-right: auto;
+}
+
+.logo:hover {
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 850px) {
+  .nav-option {
+    font-size: 18px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .header {
+    height: 45px;
+    margin-top: 0px;
+    padding : 0px 0px 0px 2px;
+    opacity: 0.9;
+  }
+  .option {
+    width: 96vw;
+    height: 45px;
+    margin-left: 0px;
+    display: block;
+    
   }
 
-  .option {
-    overflow-x: hidden;
-    overflow-y : hidden;
-    background: linear-gradient(to right, transparent 2%, black 80%);
-    height: 6vh;
-    border: 5px;
-    border-radius: 0px;
+  .side-menu {
+    display: inline-block;
+    padding: 0px;
+    margin: 0px;
+    border: 4px solid red;
+  }
+
+  .hamb {
+    display: inline-block;
+    cursor: pointer;
+    margin-bottom: 5px;
+  }
+
+  #logo {
+    display: inline-block;
+    font-size: 20px;
+    margin-top: 6px;
+    margin-bottom: 0px;
+    margin-right: 54vw;
+  }
+
+  .nav {
+    width: 95vw;
+    height: fit-content;
     display: flex;
-    justify-content: flex-end;
+    flex-direction: column;
     align-items: center;
-    width: 90vw;
-    box-shadow: 4px 0px 0px hsl(220deg 100% 55%), -4px 0px 0px hsl(220deg 100% 55%);
+    position: fixed;
+    background: black;
+    overflow: hidden;
+    max-height: 0vh;
+    margin-top: 10px;
+    transition: max-height .5s ease-out;
   }
-  .side-menu{
-    display:none;
+
+  .nav-option {
+    font-size: 20px;
+    font-weight: 700;
+    color : color-mix(in srgb, rgba(255, 255, 0, 1) 50%, rgba(0, 255, 255, 1) 50%);;
   }
-  .remside-menu
-  {
+  .current-option  {
+    border : 1px solid transparent;
+    color:  color-mix(in srgb, rgba(255, 25, 255, 1) 50%, rgba(0, 255, 255, 1) 50%); 
+  }
+
+  Link:hover {
+    background-color: grey;
+  }
+
+  /* Style label tag */
+
+  .hamb-line {
+    background: color-mix(in srgb, rgba(255, 25, 255, 1) 50%, rgba(0, 255, 255, 1) 50%);
+    display: block;
+    height: 2px;
+    position: relative;
+    width: 24px;
+
+  }
+
+  /* Style span tag */
+
+  .hamb-line::before,
+  .hamb-line::after {
+    background: color-mix(in srgb, rgba(255, 25, 255, 1) 50%, rgba(0, 255, 255, 1) 50%);
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    width: 100%;
+  }
+
+  .hamb-line::before {
+    top: 5px;
+  }
+
+  .hamb-line::after {
+    top: -5px;
+  }
+
+  .side-menu,
+  .remside-menu {
     display: none;
   }
-  .hamb{
-    display:none;
-  }
- .nav-option{
-    margin: 4px 0.5vw;
-    color: white;
-    padding: 10px 20px;
-    border : 1px rgba(104, 104, 104,0) solid;
-    font-size: 21px;
-    font-weight: 500;
-    border-radius: 40px;
-    font-family: unbounded;
-    letter-spacing: 1px;
-    transition: all linear 0.3s;
-  }
-  
-  .nav-option:hover {
-    color: black;
-    background: white;
-    border: 1px solid red;
-    border-radius: 40px;
-    cursor: pointer;
-  }
 
-  .active{
-    margin: 5px 10px;
-    color: black;
-    background: white;
-    padding: 10px 20px;
-    font-size: 21px;
-    font-weight: 200;
-    border-radius: 40px;
-    cursor: pointer;
-  }
-  
-  #logo {
-    color: black;
-    text-shadow: 2px 0px 0px white, -2px 0px 0px white, 0px 2px 0px white,
-      0px -2px 0px white;
-    margin-left: 20px;
-    font-family: "Poppins";
-    font-size: 2vw;
-    font-weight: 900;
-    margin-right: auto;
-  }
+  /* Hide checkbox */
 
-  .logo:hover {
-    cursor : pointer;
-  }
-  @media only screen and (max-width: 850px)
-  {
-      .nav-option {
-        font-size: 18px;
-      }
-  }
-  @media only screen and (max-width: 600px) 
-  {
-    .header{
-      width: 95vw;
-      height:45px;
-      margin-top : 0px;
-      
-    }
-    .option{
-      width: 95vw;
-      height:45px;
-      display:block;
-    }
-    .side-menu{
-      display:inline-block;
-      padding : 0px;
-      margin:0px;
-      border : 4px solid red;
-    }
-    .hamb{
-      display:inline-block;
-      cursor: pointer;
-      margin-bottom: 5px;
-    }
-    
-    #logo{
-      display: inline-block;
-      font-size: 20px;
-      margin-top: 6px;
-      margin-bottom: 0px;
-      margin-right: 54vw;
-    }
-
-    .nav{
-      width: 95vw;
-      height:fit-content;
-      display: flex;
-      flex-direction: column;
-      position:fixed;
-      background-color: black;
-      overflow: hidden;
-      max-height: 0vh;
-      margin-top:10px;
-      transition: max-height .5s ease-out;
-    }
-
-
-    Link:hover{
-      background-color: grey;
-    }
-    /* Style label tag */
-  
-  .hamb-line {
-      background: hsl(220deg 100% 55%);
-      display:block;
-      height: 2px;
-      position: relative;
-      width: 24px;
-  
-  } /* Style span tag */
-  
-  .hamb-line::before,
-  .hamb-line::after{
-      background: hsl(220deg 100% 55%);
-      content: '';
-      display: block;
-      height: 100%;
-      position: absolute;
-      transition: all .2s ease-out;
-      width: 100%;
-  }
-  .hamb-line::before{
-      top: 5px;
-  }
-  .hamb-line::after{
-      top: -5px;
-  }
-  
-  .side-menu, .remside-menu{
-      display: none;
-  } /* Hide checkbox */
-
-  .remside-menu ~ .nav{
+  .remside-menu~.nav {
     max-height: 100vh;
-    
-  }
-  .remside-menu ~ .hamb .hamb-line {
-      background: transparent;
-  }
-  .remside-menu  ~ .hamb .hamb-line::before {
-      transform: rotate(-45deg);
-      top:0;
-  }
-  .remside-menu ~ .hamb .hamb-line::after {
-      transform: rotate(45deg);
-      top:0;
-  }
 
   }
+
+  .remside-menu~.hamb .hamb-line {
+    background: transparent;
+  }
+
+  .remside-menu~.hamb .hamb-line::before {
+    transform: rotate(-45deg);
+    top: 0;
+  }
+
+  .remside-menu~.hamb .hamb-line::after {
+    transform: rotate(45deg);
+    top: 0;
+  }
+
+}

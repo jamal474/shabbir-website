@@ -3,11 +3,11 @@ import emailjs from '@emailjs/browser';
 import '../style/Contacts.css'
 import gmailimg from '../assets/icon/mailGoogle.svg'
 import locationimg from '../assets/icon/location.svg' 
-import githubimg_c from '../assets/icon/Github.svg'
-import linkedinimg_c from '../assets/icon/linkedin.svg'
-import instagramimg_c from '../assets/icon/instagram.svg'
-import twitterimg_c from '../assets/icon/twitter2.svg'
-import codeforcesimg_c from '../assets/icon/codeforces.svg'
+import githubimg_c from '../assets/icon/github.svg'
+import linkedinimg_c from '../assets/icon/lkdn.svg'
+import instagramimg_c from '../assets/icon/insta.svg'
+import twitterimg_c from '../assets/icon/tweet.svg'
+import codeforcesimg_c from '../assets/icon/cforces.svg'
 import SEO from './SEO'
 
 
@@ -65,7 +65,7 @@ export default function Contacts() {
                 </div>
             </div>
         </div>
-        <div className = "rights">Made with ❤️ by Md Shabbir Jamal &copy; {currentYear}</div>
+        <div className = "rights">Made with ❤️ by Md Shabbir Jamal &copy; 2022 - {currentYear}</div>
     </section>
   )
 }

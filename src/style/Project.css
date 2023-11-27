@@ -8,23 +8,19 @@
 
 .project-section-title {
   margin-right: auto;
-  margin-left: 3vw;
-  color: black;
-  text-shadow: 4px 0px 0px white, -4px 0px 0px white, 0px 4px 0px white,
-    0px -4px 0px white;
-  font-family: "Poppins";
+  margin-left: auto;
+  color: color-mix(in srgb, rgba(255, 255, 0, 1) 50%, rgba(0, 255, 255, 1) 50%);
+  font-family: unbounded;
+  font-size: 30px;
   font-size: 30px;
   font-weight: 700px;
   transition : all 0.20s linear;
   padding : 4px 20px;
+  box-shadow: 4px 0px 0px color-mix(in srgb, rgba(255, 25, 255, 1) 50%, rgba(0, 255, 255, 1) 50%),
+  -4px 0px 0px  color-mix(in srgb, rgba(255, 25, 255, 1) 50%, rgba(0, 255, 255, 1) 50%);
+
 }
 
-.project-section-title:hover {
-    color :rgb(109, 157, 255);
-    box-shadow: 4px 0px 0px hsl(220deg 100% 55%),
-    -4px 0px 0px  hsl(220deg 100% 55%);
-    cursor : default;
-}
 .project-style-1 {
   margin: 5vh 0vw;
   width: 90vw;
@@ -46,7 +42,8 @@
 }
 
 .description {
-  background: linear-gradient(45deg, hsl(220deg 100% 55%), #f9dd94);
+  /* background: linear-gradient(45deg, hsl(220deg 100% 55%), #f9dd94); */
+  background-image : linear-gradient(45deg,color-mix(in srgb, rgba(255, 25, 255, 1) 50%, rgba(0, 255, 255, 1) 50%), color-mix(in srgb, rgba(255, 255, 0, 1) 50%, rgba(0, 255, 255, 1) 50%));
   border-radius: 15px;
   box-shadow: 2px 2px 4px black;
   width: 40vw;
@@ -95,22 +92,22 @@
   margin-top: 40px;
   background-image: repeating-linear-gradient(
     -45deg,
-    rgba(0, 0, 0, 1),
-    rgba(0, 0, 0, 1) 1.5px,
+    rgba(255, 255, 0, 1),
+    rgba(0, 255, 255, 1) 1.5px,
     transparent 1px,
     transparent 6px
   );
   background-size: 8px 8px;
   border: 2px black solid;
-  transition: all 2s ease-in-out;
+  transition: background-image 1s linear;
 }
 
 .project-profile-back-1:hover {
   background-image: repeating-linear-gradient(
     -45deg,
-    rgba(0, 0, 0, 1),
-    rgba(0, 0, 0, 1) 1px,
-    transparent 2px,
+    rgba(255, 255, 0, 1),
+    rgba(0, 255, 255, 1) 3px,
+    transparent 3px,
     transparent 10px
   );
   background-size: 8px 8px;
@@ -124,8 +121,8 @@
   margin-left: 80px;
   background-image: repeating-linear-gradient(
     -45deg,
-    rgba(0, 0, 0, 1),
-    rgba(0, 0, 0, 1) 1.5px,
+    rgba(255, 25, 255,1),
+    rgb(0,255,255,1) 1.5px,
     transparent 1px,
     transparent 6px
   );
@@ -137,9 +134,9 @@
 .project-profile-back-2:hover {
   background-image: repeating-linear-gradient(
     -45deg,
-    rgba(0, 0, 0, 1),
-    rgba(0, 0, 0, 1) 1px,
-    transparent 2px,
+    rgba(255, 25, 255,1),
+    rgb(0,255,255,1) 3px,
+    transparent 3px,
     transparent 10px
   );
   background-size: 8px 8px;

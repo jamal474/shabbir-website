@@ -1,25 +1,19 @@
 import SEO from './SEO'
 import '../style/Education.css'
-import aisse from '../assets/image/aisse.png'
-import aissce from '../assets/image/aissce.png'
-import btech from '../assets/image/btech.png'
 
 function Education() {
   return (
-    <section className="education syncscroll" name="myElements" id = "Education">
+    <section className="education" name="myElements" id = "Education">
       <SEO
                 title="Education - Md Shabbir Jamal"
                 description="I did undergrad from BIT Mesra,India. Hi, I am a CS undergrad with a strong enthusiasm for web development, machine learning, and competitive programming. Explore my interests on this website."
                 name="@lamajribbahs"
                 image="../assets/image/picture.jpg" />
-      <h2 className = "education-section-title">Education</h2>
+      <h2 className = "education-section-title">education</h2>
+      <div className = "blob1"></div>
       <div className = "education-section">
       <div className = "card">
             <div className = "content">
-                    <div className="front">
-                      {/* <img src = {btech}  alt = "organisation name" className='front-img'/> */}
-                        <h2 className = "front-text">BTech</h2>
-                    </div>
                     <div className="back">
                             <a href = "https://bitmesra.ac.in" className = "invisibleLink" target = "_blank" rel="noreferrer">
                             <div className="college">
@@ -35,10 +29,6 @@ function Education() {
       </div>
       <div className = "card">
             <div className = "content">
-                    <div className="front">
-                      {/* <img src = {aissce}  alt = "organisation name" className='front-img'/> */}
-                      <h2 className = "front-text">AISSCE</h2>
-                    </div>
                     <div className="back">
                             <a href = "https://davbistupur.org/" className = "invisibleLink" target = "_blank" rel="noreferrer">
                             <div className="school-12">
@@ -54,10 +44,6 @@ function Education() {
       </div>
       <div className = "card">
             <div className = "content">
-                    <div className="front">
-                      {/* <img src = {aisse} alt = "organisation name" className='front-img'/> */}
-                      <h2 className = "front-text">AISSE</h2>
-                    </div>
                     <div className="back">
                             <a href = "https://davbistupur.org/" className = "invisibleLink" target = "_blank" rel="noreferrer">
                             <div className="school-10">
@@ -72,7 +58,9 @@ function Education() {
             </div>
       </div>
       </div>
-      <h2 className="score-section-title">Scores</h2>
+      <div className = "blob2"></div>
+      <div className = "separator"></div>
+      <h2 className="score-section-title">scores</h2>
       <div className = "score-section-description">Scores achieved on varoius Competitive Examinations :</div>
       <div className = "score-section">
           <ul className = "score-list">

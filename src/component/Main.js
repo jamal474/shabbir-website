@@ -18,7 +18,7 @@ function Main()
             <div className = "main-profile">
                 <div className = "profile-back"></div>
                 <div className = "profile-back-2"></div>
-                <img className = "profile" src ={profilePic} alt = "profile visual"/>
+                <div className = "profile-border"><img className = "profile" src ={profilePic} alt = "profile visual"/></div>
             </div>
         </section>
     )
