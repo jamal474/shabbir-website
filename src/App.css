@@ -135,6 +135,7 @@ body::-webkit-scrollbar-thumb {
 }
 .profile {
   width : 25vw;
+  border-radius: 300px;
   position: relative;
   object-fit: cover;
   object-position: 40% 20%;
