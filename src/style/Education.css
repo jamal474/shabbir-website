@@ -157,9 +157,9 @@
   }
   
   .location,.degree,.duration,.cgpa {
-    font-family : 'Poppins';
-    font-weight: 100;
-    font-size : 1vw;
+    font-family : "neue_haas_grotesk_display65Md";
+    font-weight: 500;
+    font-size : 1.2vw;
     text-align: center;
     margin : 4px 0px;
   
@@ -186,8 +186,7 @@
     border-radius: 5px;
     backface-visibility: hidden;
     background: linear-gradient(45deg, hsl(220deg 100% 55%), #f9dd94);
-    color: white;
-    text-shadow: 1px 0px black;
+    color: black;
   }
 
   .separator{

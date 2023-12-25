@@ -42,23 +42,19 @@ body::-webkit-scrollbar-thumb {
   font-family: "nephilm";
   font-weight: 700;
   font-size: 40px;
-  /* color: rgb(18, 8, 69); */
-  color : white;
+  color: white;
   margin-right: 18vw;
   padding : 0px 10px;
-  background: repeating-linear-gradient(45deg,
-  rgba(255, 25, 255,1),
-  rgb(0,255,255,1) 3px, 
-  transparent 2px,
-  transparent 15px)
-  right bottom / 0 var(--bg-h);
-  transition: background-size 450ms, color 450ms;
-  --bg-h: 100%;
+  background: linear-gradient(to right, red, orange 50%, white 50%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 200% 100%;
+  background-position: 100%;
+  transition: background-position 275ms ease;
 }
 .main-text-iam:hover{
-  /* color : white; */
-  background-size: 100% var(--bg-h);
-  background-position-x: left;
+  background-position: 0 100%;
 }
 
 .main-text-name {
@@ -69,22 +65,17 @@ body::-webkit-scrollbar-thumb {
   font-size: 40px;
   color: white;
   margin: 1vw 1vw;
-  background: repeating-linear-gradient(45deg,
-  rgba(255, 25, 255,1),
-  rgb(0,255,255,1) 3px, 
-  transparent 2px,
-  transparent 15px)
-  right bottom / 0 var(--bg-h);
-  transition: background-size 450ms, color 450ms;
-  --bg-h: 100%;
+  background: linear-gradient(to right, red, orange 50%, white 50%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 200% 100%;
+  background-position: 100%;
+  transition: background-position 275ms ease;
 }
 
 .main-text-name:hover {
-  font-family: "nephilm";
-  font-size: 40px;
-  margin: 1vw 1vw;
-  background-size: 100% var(--bg-h);
-  background-position-x: left;
+  background-position: 0 100%;
 }
 
 .main-text-desc {
@@ -114,18 +105,31 @@ body::-webkit-scrollbar-thumb {
   background : black;
   background-size : 300% 300%;
   filter: grayscale(20%);
+  transition: all 0.3s ease-in;
 }
 /* rgb(229, 93, 135), rgb(95, 195, 228) */
 .resume:hover {
   cursor : pointer;
-  animation: changeBg 1s ease infinite;
   box-shadow: -6px -6px 0px orange, 6px 6px 0px red;
 }
-.profile-border{
+.main-profile{
+  position : relative;
+}
+/* .profile-border{
   width : 25vw;
   height : 25vw;
   margin-top: 20px;
   margin-right: 50px;
+  position: relative;
+  border-radius: 400px;
+  padding :  10px;
+  background-image: linear-gradient(45deg, hsl(220, 100%, 50%),rgb(255, 183, 0), rgb(145, 255, 0));
+  background-size : 150% 150%;
+  animation: changeBg 4s linear infinite;
+} */
+.profile-border{
+  width : 25vw;
+  height : 25vw;
   position: relative;
   border-radius: 400px;
   padding :  10px;
@@ -142,7 +146,7 @@ body::-webkit-scrollbar-thumb {
   filter: grayscale(100%);
 
 }
-.profile-back {
+/* .profile-back {
   width: 20vw;
   height : 20vw;
   border-radius : 400px;
@@ -158,13 +162,46 @@ body::-webkit-scrollbar-thumb {
   );
   background-size: 8px 8px;
   border: 2px black solid;
+} */
+.profile-back {
+  width: 20vw;
+  height : 20vw;
+  border-radius : 400px;
+  position: absolute;
+  left : 150px;
+  top : -50px;
+  background-image: repeating-linear-gradient(
+    45deg,
+    rgba(255, 25, 255,1),
+    rgb(0,255,255,1) 1.5px,
+    transparent 1px,
+    transparent 6px
+  );
+  background-size: 8px 8px;
+  border: 2px black solid;
 }
-.profile-back-2 {
+/* .profile-back-2 {
   width: 20vw;
   height : 20vw;
   position: absolute;
   margin-top: 200px;
   margin-left: -20px;
+  background-image: repeating-linear-gradient(
+    -45deg,
+    rgba(255, 255, 0, 1),
+    rgba(0, 255, 255, 1) 1.5px,
+    transparent 1px,
+    transparent 6px
+  );
+  background-size: 8px 8px;
+  border: 2px black solid;
+} */
+.profile-back-2 {
+  width: 20vw;
+  height : 20vw;
+  position: absolute;
+  right : 150px;
+  bottom : -50px;
   background-image: repeating-linear-gradient(
     -45deg,
     rgba(255, 255, 0, 1),
@@ -211,17 +248,15 @@ body::-webkit-scrollbar-thumb {
     }
 
     .profile-back{
-      margin-top: 20px;
-      margin-left : 180px;
       width : 15vh;
       height : 15vh;
     }
 
     .profile-back-2{
-      margin-top : 150px;
-      margin-left : -30px;
-      width : 17vh;
-      height : 17vh;
+      width : 13vh;
+      height : 13vh;
+      right : 150px;
+      bottom : -20px;
     }
     .main-text{
       justify-content: center;

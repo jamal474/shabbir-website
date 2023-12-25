@@ -5,6 +5,10 @@ body {
   background-size: 4px 4px;
   overflow-x: hidden;
 }
+
+*.hover {
+  cursor : arrow;
+}
 @font-face {
   font-family: 'gordquick-bold';
   src: url('./assets/font/gord-quick/Gordquick\ Bold.otf');

@@ -11,7 +11,7 @@
   margin-left: auto;
   color: color-mix(in srgb, rgba(255, 255, 0, 1) 50%, rgba(0, 255, 255, 1) 50%);
   font-family: unbounded;
-  font-size: 30px;
+  margin-top: 40px;
   font-size: 30px;
   font-weight: 700px;
   transition : all 0.20s linear;
@@ -47,11 +47,9 @@
   border-radius: 15px;
   box-shadow: 2px 2px 4px black;
   width: 40vw;
-  height: 50vh;
+  height: fit-content;
   /* margin-left: auto; */
-  padding-top: 2px;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding: 2px 10px 20px 10px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -201,7 +199,7 @@
   font-weight: 100;
   color: rgb(18, 8, 69);
   padding-left: 30px;
-  margin: 4px 0px;
+  margin : 0px 0px 10px 0px;
   display: flex;
   justify-content: flex-start;
   align-items: center;

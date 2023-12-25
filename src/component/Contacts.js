@@ -65,7 +65,7 @@ export default function Contacts() {
                 </div>
             </div>
         </div>
-        <div className = "rights">Made with ❤️ by Md Shabbir Jamal &copy; 2022 - {currentYear}</div>
+        <div className = "rights"> Md Shabbir Jamal &copy; 2022 - {currentYear}</div>
     </section>
   )
 }

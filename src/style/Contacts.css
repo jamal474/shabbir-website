@@ -10,12 +10,11 @@
   margin-left: auto;
   color: color-mix(in srgb, rgba(255, 255, 0, 1) 50%, rgba(0, 255, 255, 1) 50%);
   font-family: unbounded;
-  font-family: "Poppins";
+  margin-top: 40px;
   font-size: 30px;
   font-weight: 700px;
   transition: all 0.2s linear;
   padding: 4px 20px;
-
   box-shadow: 4px 0px 0px color-mix(in srgb, rgba(255, 25, 255, 1) 50%, rgba(0, 255, 255, 1) 50%),
   -4px 0px 0px  color-mix(in srgb, rgba(255, 25, 255, 1) 50%, rgba(0, 255, 255, 1) 50%);
 }
@@ -180,6 +179,7 @@ a {
     text-align: center;
     background-color: color-mix(in srgb, rgba(255, 255, 0, 1) 50%, rgba(0, 255, 255, 1) 50%);
     font-family: "Poppins";
+    font-weight: 500;
     color : black;
 }
 

@@ -44,13 +44,13 @@ function Project()
                     <div className = "proj-desc-points">
                         <ul>
                             <li className = "proj-desc-point">
-                            backend was developed following <span style = {{color : "white"}}>REST API</span> principles, utilizing Express.js, Node.js, and MongoDB for data storage
+                            backend was developed following <span style = {{color : "blue"}}>REST API</span> principles, utilizing Express.js, Node.js, and MongoDB for data storage
                             </li>
                             <li className = "proj-desc-point">
-                            Created the frontend with React.js and implemented secure authentication using Passport.js with <span style = {{color : "white"}}>google-oauth-20 strategy</span> and deployed using <span style = {{color : "white"}}>cyclic.sh</span>
+                            Created the frontend with React.js and implemented secure authentication using Passport.js with <span style = {{color : "blue"}}>google-oauth-20 strategy</span> and deployed using <span style = {{color : "blue"}}>cyclic.sh</span>
                             </li>
                             <li className = "proj-desc-point">
-                            Designed an attractive and functional user interface for note <span style = {{color : "white"}}>creation, updates, deletions, and efficient search</span>
+                            Designed an attractive and functional user interface for note <span style = {{color : "blue"}}>creation, updates, deletions, and efficient search</span>
                             </li>
                         </ul>
                     </div>
@@ -84,10 +84,10 @@ function Project()
                             Extracted data using <a href = "https://github.com/JustAnotherArchivist/snscrape" target = "_blank" rel="noreferrer" className = "lia">SNScraper</a> and processed it for training
                             </li>
                             <li className = "proj-desc-point">
-                            Models like <span style = {{color : "white"}}>Bi-LSTM with attention</span>, <span style = {{color : "white"}}>lightGBM</span> and others were used with WAE for classifcation of previously unseen data.
+                            Models like <span style = {{color : "blue"}}>Bi-LSTM with attention</span>, <span style = {{color : "blue"}}>lightGBM</span> and others were used with WAE for classifcation of previously unseen data.
                             </li>
                             <li className = "proj-desc-point">
-                            Using predicted classifications we compared the Depression prevalence among <span style = {{color : "white"}}>Developed and Developing Countries</span>.
+                            Using predicted classifications we compared the Depression prevalence among <span style = {{color : "blue"}}>Developed and Developing Countries</span>.
                             </li>
                         </ul>
                     </div>
@@ -148,10 +148,10 @@ function Project()
                     <div className = "proj-desc-points">
                         <ul>
                             <li className = "proj-desc-point">
-                            <span style = {{color : "white"}}>Fully Responsive</span> Website, designed and implemented using React.js
+                            <span style = {{color : "blue"}}>Fully Responsive</span> Website, designed and implemented using React.js
                             </li>
                             <li className = "proj-desc-point">
-                                Deployed using the <span style = {{color : "white"}}>Netlify</span> platform
+                                Deployed using the <span style = {{color : "blue"}}>Netlify</span> platform
                             </li>
                         </ul>
                     </div>
@@ -184,13 +184,13 @@ function Project()
                     <div className = "proj-desc-points">
                         <ul>
                             <li className = "proj-desc-point">
-                            The website uses machine learning, specifically Scikit-learn's <span style = {{color : "white"}}>LinearSVC</span>
+                            The website uses machine learning, specifically Scikit-learn's <span style = {{color : "blue"}}>LinearSVC</span>
                             </li>
                             <li className = "proj-desc-point">
-                            It's trained on data from thecleverprogrammer.com and uses a <span style = {{color : "white"}}>tfidf vectorizer</span> with 2-gram feature extraction
+                            It's trained on data from thecleverprogrammer.com and uses a <span style = {{color : "blue"}}>tfidf vectorizer</span> with 2-gram feature extraction
                             </li>
                             <li className = "proj-desc-point">
-                            <span style = {{color : "white"}}>Accuracy : 61 %</span>
+                            <span style = {{color : "blue"}}>Accuracy : 61 %</span>
                             </li>
                         </ul>
                     </div>
