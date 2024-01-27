@@ -39,6 +39,7 @@
   margin-left: 17vw;
   box-shadow: 2px 0px 10px black;
   z-index : 2;
+  animation: fadeIn1 1s ease-in both;
 }
 
 a {
@@ -61,6 +62,7 @@ a {
   margin-right: 10vw;
   margin-top: 50px;
   z-index: 0;
+  animation: fadeIn2 1s ease-in both;
 }
 
 .contact-logos {
@@ -136,6 +138,7 @@ a {
     font-size : 19px;
     font-weight: 500;
     color : white;
+    border : 1px white solid;
     background-color: rgb(18, 8, 69);
     transition: all .15s linear;
 
@@ -145,7 +148,9 @@ a {
     background : black;
 
 }
-
+.socials {
+  animation: fadeIn 1s ease-in both;
+}
 .contact-val:hover {
     color : black;
 }
@@ -182,7 +187,34 @@ a {
     font-weight: 500;
     color : black;
 }
-
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+@keyframes fadeIn1 {
+	from {
+		opacity: 0;
+		transform: translate3d(-20%, 0, 0);
+	}
+	to {
+		opacity: 1;
+		transform: translate3d(0, 0, 0);
+	}
+}
+@keyframes fadeIn2 {
+	from {
+		opacity: 0;
+		transform: translate3d(20%, 0, 0);
+	}
+	to {
+		opacity: 1;
+		transform: translate3d(0, 0, 0);
+	}
+}
 
   @media only screen and (max-width: 600px)
   {

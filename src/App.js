@@ -1,13 +1,13 @@
 import React from "react";
 import "./App.css";
-import { Routes, Link, Route, useNavigate } from "react-router-dom";
-import Header from "./component/Header";
-import Main from "./component/Main";
-import Education from "./component/Education";
-import Project from "./component/Project";
-import Skills from "./component/Skills";
-import Contacts from "./component/Contacts";
-import SitemapRoute from './component/SitemapRoute';
+import { Routes, Route} from "react-router-dom";
+import Header from "./pages/Header";
+import Main from "./pages/Main";
+import Education from "./pages/Education";
+import Project from "./pages/Project";
+import Skills from "./pages/Skills";
+import Contacts from "./pages/Contacts";
+import SitemapRoute from './pages/SitemapRoute';
 import { HelmetProvider } from 'react-helmet-async';
 
 function Sitemap() {

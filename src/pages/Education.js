@@ -6,14 +6,14 @@ function Education() {
     <section className="education" name="myElements" id = "Education">
       <SEO
                 title="Education - Md Shabbir Jamal"
-                description="I did undergrad from BIT Mesra,India. Hi, I am a CS undergrad with a strong enthusiasm for web development, machine learning, and competitive programming. Explore my interests on this website."
+                description="I did my undergrad from BIT Mesra,India. Hi, I am a CS undergrad with a strong enthusiasm for web development, machine learning, and competitive programming. Explore my interests on this website."
                 name="@lamajribbahs"
                 image="../assets/image/picture.jpg" />
-      <h2 className = "education-section-title">education</h2>
+      <h2 className = "education-section-title">Education</h2>
       <div className = "blob1"></div>
       <div className = "education-section">
       <div className = "card">
-            <div className = "content">
+            <div className = "contentCard">
                     <div className="back">
                             <a href = "https://bitmesra.ac.in" className = "invisibleLink" target = "_blank" rel="noreferrer">
                             <div className="college">
@@ -21,14 +21,14 @@ function Education() {
                                   <h4 className = "location">Mesra, Ranchi</h4>
                                   <h4 className = "degree">Bachelor of Technology in CSE</h4>
                                   <h4 className = "duration">2020 - 2024</h4>
-                                  <h4 className = "cgpa"><b>Cgpa : 8.5 (6 semester)</b></h4>
+                                  <h4 className = "cgpa"><b>Cgpa : 8.57 (7 semester)</b></h4>
                             </div>
                             </a>
                     </div>
             </div>
       </div>
       <div className = "card">
-            <div className = "content">
+            <div className = "contentCard">
                     <div className="back">
                             <a href = "https://davbistupur.org/" className = "invisibleLink" target = "_blank" rel="noreferrer">
                             <div className="school-12">
@@ -43,7 +43,7 @@ function Education() {
             </div>
       </div>
       <div className = "card">
-            <div className = "content">
+            <div className = "contentCard">
                     <div className="back">
                             <a href = "https://davbistupur.org/" className = "invisibleLink" target = "_blank" rel="noreferrer">
                             <div className="school-10">
