@@ -1,0 +1,53 @@
+.experience {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.experience-section-title {
+    margin-right: auto;
+    margin-left: auto;
+    color: color-mix(in srgb, rgba(255, 255, 0, 1) 50%, rgba(0, 255, 255, 1) 50%);
+    font-family: unbounded;
+    margin-top: 40px;
+    font-size: 30px;
+    font-weight: 700px;
+    transition: all 0.20s linear;
+    padding: 4px 20px;
+    box-shadow: 4px 0px 0px color-mix(in srgb, rgba(255, 25, 255, 1) 50%, rgba(0, 255, 255, 1) 50%),
+        -4px 0px 0px color-mix(in srgb, rgba(255, 25, 255, 1) 50%, rgba(0, 255, 255, 1) 50%);
+}
+.timeline-container {
+    width: 100%;
+    max-width: 90%;
+    position: relative;
+    padding: 10px 10px;
+    /* border : 2px solid red; */
+    overflow: hidden;
+}
+.timeline-line {
+    position: absolute;
+    left: 50%;
+    top: 10px;
+    width: 5px;
+    height: 100%;
+    background-image: linear-gradient(135deg, hsl(220, 100%, 50%),rgb(255, 183, 0), rgb(145, 255, 0));
+    background-size: 200% 200%; /* Expand the background size */
+    animation: changeBg 4s linear infinite; /* Slower animation speed */
+    transform: translateX(-50%);
+}
+
+@keyframes changeBg {
+    0% {
+        background-position: 0% 50%;
+    }
+  
+    50% {
+        background-position: 100% 50%;
+    }
+  
+    100% {
+        background-position: 0% 50%;
+    }
+}
