@@ -1,0 +1,54 @@
+{
+    "company": [
+        {
+            "name": "GlobalLogic",
+            "location": "Bangalore, India",
+            "duration": "Aug, 2024 - Present",
+            "companyId": 2,
+            "site": "https://www.globallogic.com/",
+            "logoWidth": "150px"
+        },
+        {
+            "name": "Keywords Studios",
+            "location": "Gurugram, India",
+            "duration": "Feb, 2024 - Jul, 2024",
+            "companyId": 1,
+            "site": "https://www.keywordsstudios.com/",
+            "logoWidth": "90px"
+        }
+    ],
+    "work": [
+        {
+            "role": "Trainee Software Engineer",
+            "companyId": 2,
+            "roleId": "02-01",
+            "duration": "Aug, 2024 - Present"
+        },
+        {
+            "role": "Game Development Intern",
+            "companyId": 1,
+            "roleId": "01-01",
+            "duration": "Feb, 2024 - Jul, 2024"
+        }
+    ],
+    "project": [
+        {
+            "roleId": "02-01",
+            "projectName": "",
+            "pointers": [
+                "learned about Modern C++, OOPs concepts and embedded C/C++ programming",
+                "Used the concepts learned along with wxWidget and LVGL to build vehicle infotainment system and media player",
+                "Learned and practiced data structures and algorithm in C/C++ in linux environment"
+            ]
+        },
+        {
+            "roleId": "01-01",
+            "projectName": "",
+            "pointers": [
+                "Worked on developing classic games like City Blocks, Nokia Snake game using MERN stack",
+                "Built strategy game of Chess, that was multiplayer and had multilayer architecture with client and server responsibility separated",
+                "Learned C++ developement, OOPS concepts, SFML, unreal engine blueprint flow"
+            ]
+        }
+    ]
+}

@@ -1,0 +1,246 @@
+/* Timeline Item */
+.timeline-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 40px 0;
+    padding: 20px 0px 20px 0px;
+    position: relative;
+}
+
+
+.mid-circle {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 8px 15px rgba(255, 255, 255, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+    background-image: linear-gradient(135deg, color-mix(in srgb, rgba(255, 255, 0, 1) 50%, rgba(0, 255, 255, 1) 50%),
+            hsl(220, 100%, 50%),
+            rgb(255, 183, 0),
+            rgba(145, 255, 0),
+            color-mix(in srgb, rgba(255, 25, 255, 1) 50%, rgba(0, 255, 255, 1) 50%));
+    background-size: 200% 200%;
+    animation: changeBg 6s linear infinite;
+
+    position: absolute;
+    cursor: pointer;
+}
+
+.mid-circle:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 115, 230, 0.4);
+}
+
+.company-icon {
+    padding: 0px;
+    margin: 0px 0px 0px 0px;
+}
+
+.shine {
+    position: relative;
+    overflow: hidden;
+}
+
+.shine::before {
+    background: linear-gradient(to right,
+            rgba(255, 255, 255, 1) 0%,
+            rgba(255, 255, 255, 0.7) 100%);
+    content: "";
+    display: block;
+    height: 100%;
+    left: -75%;
+    position: absolute;
+    top: 0;
+    transform: skewX(-25deg);
+    width: 30%;
+    z-index: 2;
+}
+
+.shine:hover::before,
+.shine:focus::before {
+    animation: shine 1s;
+}
+
+@keyframes shine {
+    100% {
+        left: 125%;
+    }
+}
+
+
+/* company-content Containers */
+.company-work {
+    width: 40%;
+    margin : 0px;
+    padding : 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.company-work-detail {
+    background-image: linear-gradient(45deg, color-mix(in srgb, rgba(255, 25, 255, 1) 50%, rgba(0, 255, 255, 1) 50%), color-mix(in srgb, rgba(255, 255, 0, 1) 50%, rgba(0, 255, 255, 1) 50%));
+    border-radius: 10px;
+    box-shadow: 2px 2px 4px black;
+    height: fit-content;
+
+    padding: 8px 10px 8px 10px;
+    margin : 0px 0px 20px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+    font-size: 20px;
+    font-family: Poppins;
+}
+
+.company-work-name {
+    color  : #666;
+    font-size : 27px;
+    font-family: "Roboto Slab";
+    font-weight: 700;
+    margin-left : 6px;
+}
+
+.company-work-list {
+    padding-left : 20px;
+    margin : 10px 0px 10px 0px;
+}
+
+.company-work-pointer {
+    font-size : 18px;
+}
+
+.company-info {
+    width: 40%;
+    padding: 20px 10px 20px 20px;
+    border-radius: 10px;
+    color : white;
+    display : flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.company-name {
+    font-family : "Roboto Slab";
+    font-size : 38px;
+    font-weight: 500;
+    margin-bottom : 5px;
+}
+
+.company-link {
+   width : 30px;
+   margin-left :  10px;
+}
+
+.company-link:hover {
+    visibility: visible;
+    opacity : 1;
+    cursor : pointer;
+}
+
+.company-location {
+    font-family : "Roboto Slab";
+    font-size : 25px;
+    font-weight: 400;
+}
+
+.work-duration {
+    font-family : "Roboto Slab";
+    font-size : 25px;
+    font-weight: 400;
+    color : #F56969;
+}
+
+.company-work-role {
+    color : white;
+    font-family: "Roboto Slab";
+    font-weight: 500;
+    font-size: 28px;
+}
+
+.company-work-duration {
+    color : #F56969;
+    font-family: "Roboto Slab";
+    font-size: 18px;
+    margin-bottom : 10px;
+}
+/* Left and Right Alignment */
+/* .left {
+    text-align: right;
+  
+}
+
+.right {
+    text-align: left;
+} */
+
+/* Alternating Positioning */
+.timeline-item:nth-child(odd) {
+    /* margin-left: 10px; */
+    /* border: 2px solid orange; */
+    flex-direction: row-reverse;
+}
+.timeline-item:nth-child(odd) .mid-circle{
+    transform: translateX(10%);
+}
+
+.timeline-item:nth-child(even) {
+    /* margin-right: 10px; */
+    /* border: 2px solid green; */
+}
+.timeline-item:nth-child(even) .mid-circle{
+    transform: translateX(-10%);
+}
+
+/* Styling Headings and Text
+
+/* Skills and Responsibilities Styles */
+.skills {
+    font-size: 0.9em;
+    color: #666;
+    margin-top: 8px;
+}
+
+/* Responsive Layout */
+@media (max-width: 600px) {
+    .timeline-container {
+        width: 100%;
+    }
+
+    .timeline-item {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .company-work,
+    .company-info {
+        width: 90%;
+        text-align: center;
+    }
+
+    .left,
+    .right {
+        text-align: center;
+    }
+}
+
+@keyframes changeBg {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}

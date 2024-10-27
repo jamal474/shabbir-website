@@ -3,9 +3,9 @@ import "./App.css";
 import { Routes, Route} from "react-router-dom";
 import Header from "./pages/Header";
 import Main from "./pages/Main";
+import Experience from "./pages/Experience";
 import Education from "./pages/Education";
 import Project from "./pages/Project";
-import Skills from "./pages/Skills";
 import Contacts from "./pages/Contacts";
 import SitemapRoute from './pages/SitemapRoute';
 import { HelmetProvider } from 'react-helmet-async';
@@ -24,9 +24,10 @@ function App() {
         <Routes>
           {/* <Route path="/" element={<Header />} > */}
           <Route path="/" element={<Main />} />
+          <Route path="/Experience" element={<Experience/>}/>
           <Route path="Education" element={<Education />} />
           <Route path="Projects" element={<Project />} />
-          <Route path="Skills" element={<Skills />} />
+          <Route path="Skills" element={<Main/>} />
           <Route path="Contact" element={<Contacts />} />
           <Route path="/sitemap.xml" element={<Sitemap/>} />
           {/* </Route> */}
