@@ -2,7 +2,7 @@
 .education {
   display : flex;
   flex-direction: column;
-
+  margin-bottom: 80px;
 }
 
 .education-section-title {

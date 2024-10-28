@@ -148,45 +148,7 @@ a {
     background : black;
 
 }
-.socials {
-  animation: fadeIn 1s ease-in both;
-}
-.contact-val:hover {
-    color : black;
-}
 
-.instagram, .codeforces-logo{
-    width : 40px;
-    margin : 0px 20px;
-    border : 2px transparent solid;
-    border-radius: 14px;
-}
-
-.socials-logo {
-    width : 40px;
-    margin : 0px 20px;
-    border : 2px transparent solid;
-    border-radius: 40px;
-}
-.instagram:hover, .codeforces-logo:hover {
-    border: 2px color-mix(in srgb, rgba(255, 255, 0, 1) 50%, rgba(0, 255, 255, 1) 50%) solid;
-}
-.socials-logo:hover {
-    border: 2px color-mix(in srgb, rgba(255, 255, 0, 1) 50%, rgba(0, 255, 255, 1) 50%) solid;
-}
-
-.socials:hover {
-    cursor : pointer;
-}
-
-.rights {
-    width : 100%;
-    text-align: center;
-    background-color: color-mix(in srgb, rgba(255, 255, 0, 1) 50%, rgba(0, 255, 255, 1) 50%);
-    font-family: "Poppins";
-    font-weight: 500;
-    color : black;
-}
 @keyframes fadeIn {
 	from {
 		opacity: 0;
@@ -227,14 +189,6 @@ a {
         margin-right: auto;
         }
 
-      .socials-logo {
-        width : 30px;
-        margin : 0px 10px;
-      }
-      .codeforces-logo,.instagram {
-        width : 30px;
-        margin : 0px 10px;
-      }
       .front-card{
         display : none;
       }
