@@ -1,0 +1,97 @@
+.socials {
+    animation: fadeIn 1s ease-in both;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width : 30%;
+  }
+  .contact-val:hover {
+      color : black;
+  }
+  
+  .codeforces-logo{
+      width : 40px;
+      margin : 0px;
+      transition: transform 0.3s ease;
+  }
+  
+  .instagram {
+    width : 55px;
+    margin : 0px;
+    transition: transform 0.3s ease;
+  }
+  
+  .socials-logo {
+      width : 40px;
+      margin : 0px;
+      transition: transform 0.3s ease;
+  }
+  .instagram:hover, .codeforces-logo:hover, .socials-logo:hover {
+      transform: translate(3px, -3px) ;
+  }
+  
+  .socials:hover {
+      cursor : pointer;
+  }
+  
+  .footer {
+      width : 100vw;
+      height : 140px;
+      margin-bottom : 20px;
+      /* background-color: color-mix(in srgb, rgba(255, 255, 0, 1) 50%, rgba(0, 255, 255, 1) 50%); */
+      background-image: linear-gradient(45deg, #6670CC, #65CC66) ;
+      font-family : Inter;
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+  }
+  
+  .contact-person {
+    display : flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .contact-name {
+    font-family: 'Roboto Slab';
+    font-size: 25px;
+    font-weight: 500;
+  }
+  
+  .contact-email {
+    font-size: 20px;
+    font-weight: 400;
+  }
+  
+  .contact-estd {
+    font-size: 20px;
+    font-weight: 400;
+  }
+
+@media only screen and (max-width: 600px)
+  {
+      .footer {
+        height : 90px;
+      }
+
+      .socials {
+        flex-wrap: wrap;
+      }
+      .socials-logo {
+        width : 20px;
+        margin : 0px 10px;
+      }
+
+      .contact-name {
+        font-size: 15px;
+      }
+
+      .contact-email, .contact-estd {
+        font-size: 12px;
+      }
+
+      .codeforces-logo,.instagram {
+        width : 20px;
+        margin : 0px 10px;
+      }
+  }

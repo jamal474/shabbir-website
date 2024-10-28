@@ -2,6 +2,7 @@ import React from "react";
 import "./App.css";
 import { Routes, Route} from "react-router-dom";
 import Header from "./pages/Header";
+import Footer from "./pages/Footer"
 import Main from "./pages/Main";
 import Experience from "./pages/Experience";
 import Education from "./pages/Education";
@@ -32,6 +33,7 @@ function App() {
           <Route path="/sitemap.xml" element={<Sitemap/>} />
           {/* </Route> */}
         </Routes>
+        <Footer/>
       </section>
     </HelmetProvider>
   );
