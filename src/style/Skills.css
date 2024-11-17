@@ -3,7 +3,7 @@
     flex-direction: column;
 }
 
-.skills-section-title {
+/* .skills-section-title {
     margin-right: auto;
     margin-left: auto;
     margin-top: 40px;
@@ -15,10 +15,10 @@
     padding: 4px 20px;
     box-shadow: 4px 0px 0px color-mix(in srgb, rgba(255, 25, 255, 1) 50%, rgba(0, 255, 255, 1) 50%),
     -4px 0px 0px  color-mix(in srgb, rgba(255, 25, 255, 1) 50%, rgba(0, 255, 255, 1) 50%);
-}
+} */
 
 .skills-section {
-    height: 80vh;
+    height: fit-content;
     margin: 0vw 5vw 0vw 5vw;
 }
 
@@ -130,5 +130,24 @@
     .skillrow {
         width : 100%;
         margin-bottom: 20px;
+    }
+}
+
+@media only screen and (max-width: 600px) 
+{
+    .language-title, .backend-title, .database-title, .frontend-title {
+        font-size : 24px;
+    }
+
+    .skills-learned {
+        width: 150px;
+    }
+
+    .skills-learned-logo {
+        width : 40px;
+    }
+
+    .skills-learned-comp {
+        font-size: 15px;
     }
 }

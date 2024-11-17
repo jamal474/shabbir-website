@@ -37,6 +37,7 @@ function Experience() {
                 <div class="timeline-line"></div>
                 {companyList}
             </div>
+            <div className = "phoneNote">Open in desktop to see more info</div>
         </section>
     );
 }

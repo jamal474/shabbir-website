@@ -14,12 +14,12 @@ import mondb from '../assets/icon/mongo.svg'
 function Skills() {
     return (
         <section className="skills" name="myElements" id="Skills">
-            <SEO
+            {/* <SEO
                 title="Skills - Md Shabbir Jamal"
                 description="I have skills in problem solving, many tools like html, css, react.js, express.js, and others."
                 name="@lamajribbahs"
                 image="../assets/image/picture.jpg" />
-            <h2 className="skills-section-title">Skills</h2>
+            <h2 className="skills-section-title">Skills</h2> */}
             <div className="skills-section">
                 <div className="language">
                     <div className="language-title">Languages</div>

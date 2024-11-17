@@ -15,16 +15,6 @@
         <priority>1.0</priority>
     </url>
     <url>
-        <loc>https://mdshabbirjamal.one/Skills</loc>
-        <changefreq>monthly</changefreq>
-        <priority>1.0</priority>
-    </url>
-    <url>
-        <loc>https://mdshabbirjamal.one/Contact</loc>
-        <changefreq>yearly</changefreq>
-        <priority>1.0</priority>
-    </url>
-    <url>
         <loc>https://quizton.mdshabbirjamal.one/Contact</loc>
         <changefreq>monthly</changefreq>
         <priority>1.0</priority>

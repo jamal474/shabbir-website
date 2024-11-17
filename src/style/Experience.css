@@ -19,8 +19,7 @@
         -4px 0px 0px color-mix(in srgb, rgba(255, 25, 255, 1) 50%, rgba(0, 255, 255, 1) 50%);
 }
 .timeline-container {
-    width: 100%;
-    max-width: 90%;
+    width: 80%;
     position: relative;
     padding: 10px 10px;
     /* border : 2px solid red; */
@@ -37,6 +36,23 @@
     animation: changeBg 4s linear infinite, fadeIn 0.5s ease-in both;
     transform: translateX(-50%);
 
+}
+
+.phoneNote {
+    color : #F56969;
+    font-family: "Roboto Slab";
+    font-size: 17px;
+    margin-bottom : 40px;
+    padding-left : 20px;
+    box-shadow: -2px 0px 0px white;
+    display : none;
+}
+
+@media (max-width: 600px) {
+
+    .phoneNote {
+        display: block;
+    }
 }
 
 @keyframes changeBg {

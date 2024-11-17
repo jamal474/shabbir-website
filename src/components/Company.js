@@ -1,5 +1,7 @@
 import React from 'react'
 import '../style/Company.css'
+import parser from 'html-react-parser'
+import { expandString } from '../utils'
 
 const Company = (props) => {
     //making the work details
@@ -13,7 +15,7 @@ const Company = (props) => {
                                             <div className = "company-work-name">{projectElement.projectName}</div>
                                             <ul className = "company-work-list">
                                                 {projectElement.pointers.map((point, index) => (
-                                                    <li className = "company-work-pointer" key = {index}>{point}</li>
+                                                    <li className = "company-work-pointer" key = {index}>{parser(expandString(point))}</li>
                                                 ))}
                                             </ul>
                                         </div>

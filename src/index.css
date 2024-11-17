@@ -6,6 +6,9 @@ body {
   overflow-x: hidden;
 }
 
+a {
+  all : unset;
+}
 *.hover {
   cursor : arrow;
 }

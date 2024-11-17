@@ -2,7 +2,7 @@
 .timeline-item {
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content:space-between;
     margin: 40px 0;
     padding: 20px 0px 20px 0px;
     position: relative;
@@ -112,12 +112,13 @@
 }
 
 .company-work-pointer {
-    font-size : 18px;
+    font-family: "Roboto Slab";
+    font-size : 16px;
+    font-weight: 400;
 }
 
 .company-info {
-    width: 40%;
-    padding: 20px 10px 20px 20px;
+    width : 40%;
     border-radius: 10px;
     color : white;
     display : flex;
@@ -162,13 +163,13 @@
     color : white;
     font-family: "Roboto Slab";
     font-weight: 500;
-    font-size: 28px;
+    font-size: 22px;
 }
 
 .company-work-duration {
     color : #F56969;
     font-family: "Roboto Slab";
-    font-size: 18px;
+    font-size: 17px;
     margin-bottom : 10px;
 }
 /* Left and Right Alignment */
@@ -183,20 +184,14 @@
 
 /* Alternating Positioning */
 .timeline-item:nth-child(odd) {
-    /* margin-left: 10px; */
-    /* border: 2px solid orange; */
     flex-direction: row-reverse;
 }
 .timeline-item:nth-child(odd) .mid-circle{
-    transform: translateX(10%);
 }
 
 .timeline-item:nth-child(even) {
-    /* margin-right: 10px; */
-    /* border: 2px solid green; */
 }
 .timeline-item:nth-child(even) .mid-circle{
-    transform: translateX(-10%);
 }
 
 /* Styling Headings and Text
@@ -214,15 +209,23 @@
         width: 100%;
     }
 
-    .timeline-item {
+    .timeline-item:nth-child(even) {
+        flex-direction: column;
+        /* align-items: center; */
+    }
+    .timeline-item:nth-child(odd) {
         flex-direction: column;
         align-items: center;
     }
 
-    .company-work,
     .company-info {
         width: 90%;
         text-align: center;
+    }
+    .company-work{
+        width: 90%;
+        text-align: center;
+        display : none;
     }
 
     .left,

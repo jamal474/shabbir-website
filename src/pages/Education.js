@@ -21,7 +21,7 @@ function Education() {
                                   <h4 className = "location">Mesra, Ranchi</h4>
                                   <h4 className = "degree">Bachelor of Technology in CSE</h4>
                                   <h4 className = "duration">2020 - 2024</h4>
-                                  <h4 className = "cgpa"><b>Cgpa : 8.57 (7 semester)</b></h4>
+                                  <h4 className = "cgpa"><b>Cgpa : 8.57</b></h4>
                             </div>
                             </a>
                     </div>

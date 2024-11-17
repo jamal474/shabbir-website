@@ -27,7 +27,7 @@ function Header() {
             <Link to="/Education"  className = {location.pathname === "/Education" ? "nav-option current-option": "nav-option" } onClick={handleClick}>Education</Link>
             <Link to="/Projects" className = {location.pathname === "/Projects" ? "nav-option current-option": "nav-option" } onClick={handleClick}>Projects</Link>
             {/* <Link to="/Skills"  className = {location.pathname === "/Main" ? "nav-option current-option": "nav-option" } onClick={handleClick}>Skills</Link> */}
-            <Link to="/Contact" className = {location.pathname === "/Contact" ? "nav-option current-option": "nav-option" } onClick={handleClick}>Contacts</Link>
+            {/* <Link to="/Contact" className = {location.pathname === "/Contact" ? "nav-option current-option": "nav-option" } onClick={handleClick}>Contacts</Link> */}
           </div>
        
       </div>

@@ -36,8 +36,8 @@
             "roleId": "02-01",
             "projectName": "",
             "pointers": [
-                "learned about Modern C++, OOPs concepts and embedded C/C++ programming",
-                "Used the concepts learned along with wxWidget and LVGL to build vehicle infotainment system and media player",
+                "learned about $sc{Modern C++}, $sc{OOPs concepts} and $sc{embedded C/C++ programming}",
+                "Used the concepts learned along with $mc{wxWidget} and $mc{LVGL} to build vehicle infotainment system and media player",
                 "Learned and practiced data structures and algorithm in C/C++ in linux environment"
             ]
         },
@@ -45,9 +45,9 @@
             "roleId": "01-01",
             "projectName": "",
             "pointers": [
-                "Worked on developing classic games like City Blocks, Nokia Snake game using MERN stack",
-                "Built strategy game of Chess, that was multiplayer and had multilayer architecture with client and server responsibility separated",
-                "Learned C++ developement, OOPS concepts, SFML, unreal engine blueprint flow"
+                "Worked on developing classic games like $sc{City Blocks}, $sc{Nokia Snake game} using $mc{MERN stack}",
+                "Built strategy game of $sc{Chess}, that was $mc{multiplayer} and had $mc{multilayer architecture} with client and server responsibility separated",
+                "Learned $sc{C++ developement}, $sc{OOPS concepts}, $sc{SFML}, $sc{unreal engine blueprint flow}"
             ]
         }
     ]

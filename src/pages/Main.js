@@ -1,10 +1,14 @@
 import profilePic from '../assets/image/new.jpg'
 import SEO from './SEO'
 import Skills from './Skills'
+import PersonSchema from './PersonSchema'
+
 function Main() {
     return (
         <div className = "mainIntro">
+            <PersonSchema/>
             <section className="main" name="myElements" id="About">
+
                 <SEO
                     title="Md Shabbir Jamal - Portfolio"
                     description="Hi, I am a CS undergrad with a strong enthusiasm for web development, machine learning, and competitive programming. Explore my interests on this website."
@@ -22,7 +26,9 @@ function Main() {
                     <div className="profile-border"><img className="profile" src={profilePic} alt="profile visual" /></div>
                 </div>
             </section>
-            <Skills />
+            <div className = "skillSubpart">
+                <Skills />
+            </div>
         </div>
     )
 }
