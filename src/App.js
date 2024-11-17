@@ -7,7 +7,7 @@ import Main from "./pages/Main";
 import Experience from "./pages/Experience";
 import Education from "./pages/Education";
 import Project from "./pages/Project";
-import Test from "./pages/Test";
+// import Test from "./pages/Test";
 import SitemapRoute from './pages/SitemapRoute';
 import { HelmetProvider } from 'react-helmet-async';
 import WebsiteSchema from "./pages/WebsiteSchema";
@@ -30,7 +30,7 @@ function App() {
           <Route path="Education" element={<Education />} />
           <Route path="Projects" element={<Project />} />
           <Route path="Skills" element={<Main/>} />
-          <Route path="Testing" element={<Test/>}/>
+          {/* <Route path="Testing" element={<Test/>}/> */}
           <Route path="/sitemap.xml" element={<Sitemap/>} />
           {/* </Route> */}
         </Routes>
