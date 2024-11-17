@@ -17,7 +17,7 @@ function Main() {
                 <div className="main-text">
                     <div className="main-text-iam">Hello I' am</div>
                     <div className="main-text-name">Md Shabbir Jamal</div>
-                    <div className="main-text-desc"> Engineer, Web developer, Competitive Programming enthusiast</div>
+                    <div className="main-text-desc"> Software Engineer, Competitive Programming enthusiast</div>
                     <a href="https://drive.google.com/file/d/11IG-Ln7WZ7djEvHy1eRimlkPxs_aemXl/view?usp=drive_link" target="_blank" rel="noreferrer"><button className="resume">RESUME</button></a>
                 </div>
                 <div className="main-profile">
